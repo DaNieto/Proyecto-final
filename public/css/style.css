@@ -73,10 +73,11 @@ margin:0 auto;
 }
 
 .mail-form-agile {
+    line-height: 100%;
     padding: 50px 40px;
     text-align: center;
     margin:0px;
-    background: rgba(23, 218, 218, 0.18);
+    background: rgba(21, 13, 24, 0.18);
     color: #000;
 	margin:0 auto;
 }
@@ -84,9 +85,10 @@ margin:0 auto;
 .padding {
 margin: 20px 0 30px;
 }
-.mail-form-agile input[type="text"], .mail-form-agile input[type="password"] {
+.mail-form-agile input[type="email"], .mail-form-agile input[type="password"] {
 padding: 13px 10px;
-width: 92.5%;
+/*width: 100%;*/
+/*position:absolute;*/
 font-size: 16px;
 outline: none;
 background:transparent;
@@ -242,7 +244,7 @@ padding:75px 30px;
 .mail-form-agile {
     padding: 35px 30px;
 }
-.mail-form-agile input[type="text"], .mail-form-agile input[type="password"] {
+.mail-form-agile input[type="email"], .mail-form-agile input[type="password"] {
     font-size: 14px;
 }
 .mail-form-agile input[type="submit"] {
