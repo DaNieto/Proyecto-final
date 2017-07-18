@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<body class="bd">
 <div class="container">
     <div class="row">
        <head>
@@ -13,7 +14,7 @@
         </head>
         <div class="padding-all">
         <div class="header">
-            <h1><img src="./imagesLog/5.png" alt=" "> FinalBoss</h1>
+            <h1><img src="imagesLog/5.png" alt=" "> FinalBoss</h1>
         </div>
 
        <!--  <div class="design-w3l">
@@ -99,4 +100,5 @@
 </div>
 </div>
 </div>
+</body>
 @endsection

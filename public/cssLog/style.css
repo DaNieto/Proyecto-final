@@ -28,20 +28,20 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
-body{
+.bd{
 text-align: center;
-background: url("../images/1.jpg") 0px 0px no-repeat;
+background: url("imagesLog/1.jpg") 0px 0px no-repeat;
 background-size:cover;
 background-attachment: fixed;
 }
 
 @font-face{
 font-family: "Audiowide-Regular";
-src:url(../fonts/Audiowide-Regular.ttf);
+src:url(../fontsLog/Audiowide-Regular.ttf);
 }
 @font-face{
 font-family: "Asap-Regular";
-src:url(../fonts/Asap-Regular.ttf);
+src:url(../fontsLog/Asap-Regular.ttf);
 }
 .padding-all{
 padding:100px;
