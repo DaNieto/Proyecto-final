@@ -84,7 +84,7 @@ margin:0 auto;
 .padding {
 margin: 20px 0 30px;
 }
-.mail-form-agile input[type="text"], .mail-form-agile input[type="password"] {
+.mail-form-agile input[type="email"], .mail-form-agile input[type="password"] {
 padding: 13px 10px;
 width: 92.5%;
 font-size: 16px;
@@ -242,7 +242,7 @@ padding:75px 30px;
 .mail-form-agile {
     padding: 35px 30px;
 }
-.mail-form-agile input[type="text"], .mail-form-agile input[type="password"] {
+.mail-form-agile input[type="email"], .mail-form-agile input[type="password"] {
     font-size: 14px;
 }
 .mail-form-agile input[type="submit"] {

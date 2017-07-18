@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<body class="bd">
 <div class="container">
     <div class="row">
        <head>
@@ -16,6 +15,7 @@
         <div class="header">
             <h1><img src="imagesLog/5.png" alt=" "> FinalBoss</h1>
         </div>
+<body class="bd">
 
        <!--  <div class="design-w3l">
             <div class="mail-form-agile">
@@ -47,11 +47,12 @@
                                                 <!-- <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus> -->
                                                 @if ($errors->has('email'))
                                                 <span class="help-block">
-                                                    <p>- Vuelve a introducir el correo<!-- <strong>{{ $errors->first('email') }}</strong> -->
+                                                    <p>- Vuelve a introducir el correo<!-- <strong>{{ $errors->first('email') }}</strong> --></p>
                                                 </span>
                                                 @endif
                                             </div>
                                         </div>
+
 
                                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                             <!-- <label for="password" class="col-md-4 control-label">Password</label> -->
@@ -94,11 +95,11 @@
                     </div>
                 <!-- </div> -->
             <!-- </div> -->
+            </body>
         </div>
-<div class="footer">
+    <div class="footer">
 <p>© 2017 FinalBoss </a></p>
 </div>
 </div>
 </div>
-</body>
 @endsection
