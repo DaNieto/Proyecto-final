@@ -11,12 +11,11 @@
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
         <link href="cssLog/style.css" rel="stylesheet" type="text/css" media="all" />
         </head>
+        <body class="body">
         <div class="padding-all">
         <div class="header">
             <h1><img src="imagesLog/5.png" alt=" "> FinalBoss</h1>
         </div>
-<body class="bd">
-
        <!--  <div class="design-w3l">
             <div class="mail-form-agile">
                 <form action="#" method="post">
@@ -95,8 +94,8 @@
                     </div>
                 <!-- </div> -->
             <!-- </div> -->
-            </body>
-        </div>
+            </div>
+        </body>
     <div class="footer">
 <p>© 2017 FinalBoss </a></p>
 </div>
