@@ -60,66 +60,7 @@
     <!-- Header -->
     <div class="agileheader" id="agileitshome">
 
-        <!-- Navigation -->
-        <div class="w3lsnavigation">
-            <nav class="navbar navbar-inverse agilehover-effect wthreeeffect navbar-default">
-
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Logo -->
-                    <div class="logo">
-                        <a class="navbar-brand logo-w3l button" href="index.html">GAME ROBO</a>
-                    </div>
-                    <!-- //Logo -->
-                </div>
-
-                <div id="navbar" class="navbar-collapse navbar-right collapse">
-                    <ul class="nav navbar-nav navbar-right cross-effect" id="cross-effect">
-                        <li><a class="scroll" href="#w3lsaboutaits">ABOUT</a></li>
-                        <li><a class="scroll" href="#agileinfoplatforms">PLATFORMS</a></li>
-                        <li><a class="scroll" href="#wthreetabsaits">COLLECTION</a></li>
-                        <li><a class="scroll" href="#wthreeblogsaits">BLOG</a></li>
-                        <li><a class="scroll" href="#w3portfolioaits">PORTFOLIO</a></li>
-                        <li><a class="scroll" href="#agilecontactw3ls">CONTACT</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
-                            <div class="dropdown-menu">
-                                <form action="#" method="post">
-                                    <div id="login" class="animate w3loginagile form">
-                                        <h3>Login</h3>
-                                        <input type="text" Name="Userame" placeholder="Username" required="">
-                                        <input type="password" Name="Password" placeholder="Password" required="">
-                                        <div class="send-button wthree agileits">
-                                            <input type="submit" value="Login">
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </form>
-                                <form action="#" method="post">
-                                    <div id="register" class="animate w3registeragile form">
-                                        <h3>Sign Up</h3>
-                                        <input type="text" Name="Name" placeholder="Name" required="">
-                                        <input type="text" Name="Email" placeholder="Email" required="">
-                                        <input type="password" Name="Password" placeholder="Password" required="">
-                                        <input type="text" Name="Phone Number" placeholder="Phone Number" required="">
-                                        <div class="send-button wthree agileits">
-                                            <input type="submit" value="Sign Up">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-                    </ul>
-                </div><!-- //Navbar-Collapse -->
-
-            </nav>
-        </div>
-        <!-- //Navigation -->
+        
 
         <!-- Slider -->
         <div class="slider">

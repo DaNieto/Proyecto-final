@@ -14,33 +14,38 @@
     <link href="{{ asset('cssLog/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
+  
 
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
+                     <!-- Navigation -->
+        <div class="w3lsnavigation">
+            <nav class="navbar navbar-inverse agilehover-effect wthreeeffect navbar-default">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a class="navbar-brand logo-w3l button" href="index.html">GAME ROBO</a>
+                    </div>
+                    <!-- //Logo -->
                 </div>
 
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
+                <div id="navbar" class="navbar-collapse navbar-right collapse" >
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+                        <li class="menu"><a href=# class="btn btn-success btn-xs">
+                        <span class="glyphicon-star" aria-hidden="true"></span></a></li>
+                        <li><a class="scroll" href="#w3lsaboutaits">ABOUT</a></li>
+                        <li><a class="scroll" href="#agileinfoplatforms">PLATFORMS</a></li>
+                        <li><a class="scroll" href="#wthreetabsaits">COLLECTION</a></li>
+                        <li><a class="scroll" href="#wthreeblogsaits">BLOG</a></li>
+                        <li><a class="scroll" href="#w3portfolioaits">PORTFOLIO</a></li>
+                        <li><a class="scroll" href="#agilecontactw3ls">CONTACT</a></li>
+                    <!-- //aqui va el log y log out de laravel -->
+                      <ul id="navbar" class="navbar-collapse navbar-right collapse">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
@@ -70,9 +75,15 @@
                                         </form>
                                     </li>
                                 </ul>
+
                             </li>
                         @endif
                     </ul>
+
+        <!-- //aqui termina el log y logout de laravel -->
+                </div><!-- //Navbar-Collapse -->
+
+
                 </div>
             </div>
         </nav>
