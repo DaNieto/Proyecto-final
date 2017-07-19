@@ -28,8 +28,10 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- Logo -->
+
                     <div class="logo">
-                        <a class="navbar-brand logo-w3l button" href="index.html">GAME ROBO</a>
+                        <a class="navbar-brand logo-w3l button" href="index.html">Final Boss</a>
+                        
                     </div>
                     <!-- //Logo -->
                 </div>
@@ -45,6 +47,7 @@
                         <li><a class="scroll" href="#w3portfolioaits">PORTFOLIO</a></li>
                         <li><a class="scroll" href="#agilecontactw3ls">CONTACT</a></li>
                     <!-- //aqui va el log y log out de laravel -->
+
                       <ul id="navbar" class="navbar-collapse navbar-right collapse">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
