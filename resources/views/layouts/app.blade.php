@@ -31,7 +31,7 @@
 
                     <div class="logo">
                         <a class="navbar-brand logo-w3l button" href="index.html">Final Boss</a>
-                        
+
                     </div>
                     <!-- //Logo -->
                 </div>
@@ -41,11 +41,11 @@
                         <li class="menu"><a href=# class="btn btn-success btn-xs">
                         <span class="glyphicon-star" aria-hidden="true"></span></a></li>
                         <li><a class="scroll" href="#w3lsaboutaits">ABOUT</a></li>
-                        <li><a class="scroll" href="#agileinfoplatforms">PLATFORMS</a></li>
-                        <li><a class="scroll" href="#wthreetabsaits">COLLECTION</a></li>
+                        <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
+                        <li><a class="scroll" href="#wthreetabsaits">COLECCION</a></li>
                         <li><a class="scroll" href="#wthreeblogsaits">BLOG</a></li>
                         <li><a class="scroll" href="#w3portfolioaits">PORTFOLIO</a></li>
-                        <li><a class="scroll" href="#agilecontactw3ls">CONTACT</a></li>
+                        <li><a class="scroll" href="#agilecontactw3ls">CONTACTO</a></li>
                     <!-- //aqui va el log y log out de laravel -->
 
                       <ul id="navbar" class="navbar-collapse navbar-right collapse">
