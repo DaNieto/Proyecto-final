@@ -1,4 +1,6 @@
 @extends('layouts.app')
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
   
 @section('content')
 <div class="container">
@@ -14,7 +16,7 @@
         <body class="body">
         <div class="padding-all">
         <div class="header">
-            <h1><img src="imagesLog/5.png" alt=" "> FinalBoss</h1>
+            <h1><img src="imagesLog/c.png" alt=" "> FinalBoss</h1>
         </div>
 
        <!--  <div class="design-w3l">

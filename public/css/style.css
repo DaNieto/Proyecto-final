@@ -114,12 +114,12 @@ a:focus, a:hover {
 		background-color: rgba(0, 0, 0, 0.75);
 		border: none;
 		margin-bottom: 0;
-		padding: 0;
+		padding: 10px;
 		border-radius: 0;
 	}
 
 	.navbar-inverse .navbar-brand {
-		color: #FFF;
+		color: ;
 		font-family: 'Press Start 2P', cursive;
 		font-size: 40px;
 		line-height: 45px;
@@ -305,18 +305,38 @@ a:focus, a:hover {
 	.agileheader .heading {
 		position: absolute;
 		left: 0;
-		right: 0;
-		top: 30%;
-		background-color: rgba(0,0,0,0.75);
-		width: 50%;
+		right: 65%;
+		top: 15%;
+		background-color: rgba(42, 20, 41, 0.7);
+		width: 30%;
 		margin: 0 auto;
 		padding: 50px;
+		
 	}
-
+	.agileheader .heading3 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 10%;
+		width: 60%;
+		margin: 0 auto;
+		padding: 50px;
+		border-radius: 25px;
+	}
+		.agileheader .heading2 {
+		position: absolute;
+		left: 15%;
+		right: 0;
+		top: 10%;
+		width: 60%;
+		margin: 0 auto;
+		padding: 50px;
+		border-radius: 25px;
+	}
 	.heading h1 {
 		font-family: 'Press Start 2P', cursive;
 		font-size: 50px;
-		color: #EEE;
+		color: #BDBDBD;
 	}
 
 	.heading h2 {
@@ -335,8 +355,44 @@ a:focus, a:hover {
 		padding: 20px;
 		background-color: rgba(102, 102, 102, 0.75);
 	}
+	.heading3 h3 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 40px;
+		font-weight: 100;
+		color: #EEE;
+		padding: 20px;
+		background-color: rgba(102, 102, 102, 0.75);
+	}
+.heading h1 img {
+		
+		
+		float: right;
 
+		
+		width: 40%;
+		margin: 10px;
+		padding: -40px;
+		padding-top: 35px;
+		padding-bottom: 10px;
+		border-radius: 25px;
+	
+	}
+	.jack
+	{
+	
+	float: center;	
+		width: 40%;
+		margin: 10px;
+		padding: -40px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		border-radius: 25px;
+	
+	}
 	/*-- //Heading-1 --*/
+	/*-- //coin --*/
+
+
 
 	/*-- Slider --*/
 

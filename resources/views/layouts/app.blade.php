@@ -31,7 +31,8 @@
                     <!-- Logo -->
 
                     <div class="logo">
-                        <a class="navbar-brand logo-w3l button" href="index.html">Final Boss</a>
+
+                         <a class="navbar-brand logo-w3l button"  >FINAL BOSS</a>
 
                     </div>
                     <!-- //Logo -->
@@ -40,15 +41,17 @@
                 <div id="navbar" class="navbar-collapse navbar-right collapse" >
 
                       
-                        <li><a class="scroll" href="#w3lsaboutaits">ABOUT</a></li>
+                        <li><a class="scroll" href="{{ route('home') }}">HOME</a></li>
                         <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
                         <li><a class="scroll" href="#wthreetabsaits">COLECCION</a></li>
                         <li><a class="scroll" href="#wthreeblogsaits">BLOG</a></li>
                         <li><a class="scroll" href="#w3portfolioaits">PORTFOLIO</a></li>
                         <li><a class="scroll" href="#agilecontactw3ls">CONTACTO</a></li>
                     <!-- //aqui va el log y log out de laravel -->
+                 
 
-                      <ul id="navbar" class="navbar-collapse navbar-right collapse">
+                      <ul id="navbar" class="navbar-collapse navbar-right collapse" >
+                    <li><img src="images/g.png" width="30" height="30"></li>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
@@ -61,21 +64,24 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                    <p>
                                             <a href=# class="btn btn-primary btn-xs">
                                              <span class="glyphicon glyphicon-pencil " aria-hidden="true"></span>
                                            
                                             Perfil
                                         </a>
                                         <hr>
-                                        <a href="{{ route('logout') }}"
+                                        <p>
+                                        <a href="{{ route('logout') }}" class="btn btn-primary btn-xs"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                            Cerrar Secion
                                         </a>
                                         <br>
+                                        <p>
                                       
                                          <a href=# class="btn btn-primary btn-xs">
-                                             <span class="fa fa-html5" aria-hidden="true"></span>
+                                             <span class="fa fa-gamepad" aria-hidden="true"></span>
                                        Carrito
                                        
                     </a>

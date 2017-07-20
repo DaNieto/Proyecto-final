@@ -18,7 +18,7 @@
 <!-- Head -->
 <head>
 
-<title>Game Robo a Gaming Category Bootstrap Responsive Website Template | Home :: W3layouts</title>
+
 
 <!-- Meta-Tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,24 +66,46 @@
         <div class="slider">
             <ul class="rslides" id="slider">
                 <li class="first-slide w3ls">
-                    <img src="images/slide-1.jpg" alt="Game Robo">
+                    <img src="images/db.jpg" alt="Game Robo">
                     <div class="heading">
-                        <h1>GAME ROBO</h1>
-                        <h2>FREE FULL GAMES</h2>
-                        <h3>A UNIQUE PLACE TO DOWNLOAD</h3>
+                        <h1>"COINS" <img src="images/mc.png" ></h1> 
+                        <h2>Como ganar coins?</h2>
+                        <h3>En nuestro sitio web podras ganar "Coins" con cada compra que realices</h3>
                     </div>
                 </li>
                 <li class="second-slide aits">
                     <img src="images/slide-2.jpg" alt="Game Robo">
+                <div class="heading">
+                        <h1>"COINS" <img src="images/mc.png" ></h1> 
+                        <h2>Como ganar coins?</h2>
+                        <h3>En nuestro sitio web podras ganar "Coins" con cada compra que realices</h3>
+                    </div>
                 </li>
                 <li class="third-slide w3-agileits">
                     <img src="images/slide-3.jpg" alt="Game Robo">
+                    <div class="heading">
+                    <img src="images/jp.png" class="jack" >
+                        <h2>Como hacer girar Jackpot?</h2>
+                        <h3>podrás hacer girar el jackpot con cada coin que tengas</h3>
+                    </div>
                 </li>
                 <li class="fourth-slide agileinfo">
                     <img src="images/slide-4.jpg" alt="Game Robo">
+                    <div class="heading">
+                        <img src="images/jp.png" class="jack" >
+                        <h2>Como hacer girar Jackpot?</h2>
+                        <h3>podrás hacer girar el jackpot con cada coin que tengas</h3>
+                    </div>
                 </li>
                 <li class="fifth-slide wthree">
-                    <img src="images/slide-5.jpg" alt="Game Robo">
+                    <img src="images/slide-1.jpg" alt="Game Robo">
+                    <div class="heading3">
+                        <h3>Disfruta nuestras Grandes ofertas!</h3>
+
+                        
+                    </div>
+                    
+
                 </li>
             </ul>
         </div>
