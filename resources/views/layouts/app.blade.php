@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('cssLog/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
   
@@ -38,8 +39,7 @@
 
                 <div id="navbar" class="navbar-collapse navbar-right collapse" >
 
-                        <li class="menu"><a href=# class="btn btn-success btn-xs">
-                        <span class="glyphicon-star" aria-hidden="true"></span></a></li>
+                      
                         <li><a class="scroll" href="#w3lsaboutaits">ABOUT</a></li>
                         <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
                         <li><a class="scroll" href="#wthreetabsaits">COLECCION</a></li>
@@ -61,7 +61,8 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                    <a href="{{ route('logout') }}">
+                                            <a href=# class="btn btn-primary btn-xs">
+                                             <span class="glyphicon glyphicon-pencil " aria-hidden="true"></span>
                                            
                                             Perfil
                                         </a>
@@ -71,7 +72,15 @@
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
+                                        <br>
+                                      
+                                         <a href=# class="btn btn-primary btn-xs">
+                                             <span class="fa fa-html5" aria-hidden="true"></span>
+                                       Carrito
                                        
+                    </a>
+                                            
+                                        </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}

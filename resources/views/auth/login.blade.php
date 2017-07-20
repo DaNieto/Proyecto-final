@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+  
 @section('content')
 <div class="container">
     <div class="row">
@@ -16,6 +16,7 @@
         <div class="header">
             <h1><img src="imagesLog/5.png" alt=" "> FinalBoss</h1>
         </div>
+
        <!--  <div class="design-w3l">
             <div class="mail-form-agile">
                 <form action="#" method="post">
@@ -26,6 +27,9 @@
             </div>
           <div class="clear"> </div>
         </div> -->
+                    <!-- Navigation -->
+
+                    <!-- Logo -->
 
                           <!-- <div class="col-md-8 col-md-offset-2"> -->
                            <!-- <div class="panel panel-default"> -->
