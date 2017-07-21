@@ -15,14 +15,14 @@ extends('layouts.app')
 					<tr>
 						<td>{{$item->nombre}}</td>
 						<td>{{$item->precio}}</td>
-						<td><a href="{{url("user/quitar_carito/$item->id")}}" class="btn red">X</a></td>
+						<td><a href="{{url(user/quitar_carito/$item->id)}}" class="btn red">X</a></td>
 					</tr>
 				@endforeach
 			</table>
-			<a href="{{url("urlparametodosdepagoetc...")}}" class="btn col s12">Finalizar compra</a>
+			<a href="{{url(urlparametodosdepagoetc...)}}" class="btn col s12">Finalizar compra</a>
 		@else
 			<h2>No has seleccionado articulos para comprar...</h2>
-			<a href="{{url("/")}}" class="btn col s12">Seguir Comprando</a>
+			<a href="{{url(/)}}" class="btn col s12">Seguir Comprando</a>
 		@endif
 	</div>
 </div>

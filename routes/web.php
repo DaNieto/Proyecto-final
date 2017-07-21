@@ -24,3 +24,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/jackpot', 'jackpotController@index');
+
+Route::get('/carrito', 'carritoController@index');
+

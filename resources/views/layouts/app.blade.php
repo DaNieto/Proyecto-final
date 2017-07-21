@@ -45,7 +45,7 @@
                         <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
                         <li><a class="scroll" href="#wthreetabsaits">COLECCION</a></li>
                         <li><a class="scroll" href="#wthreeblogsaits">BLOG</a></li>
-                        <li><a class="scroll" href="#w3portfolioaits">PORTFOLIO</a></li>
+                        <li><a class="scroll" href="#w3portfolioaits">JackPot</a></li>
                         <li><a class="scroll" href="#agilecontactw3ls">CONTACTO</a></li>
                     <!-- //aqui va el log y log out de laravel -->
                  

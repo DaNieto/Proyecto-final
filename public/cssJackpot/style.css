@@ -1,0 +1,150 @@
+body{
+text-align: center;
+background: url("../imagesLog/1.jpg") 0px 0px no-repeat;
+background-size:cover;
+background-attachment: fixed;
+}
+
+html, body {
+  margin : 0;
+  overflow : hidden;
+  transition : .5s;
+  height : 100%;
+  width : 100%;
+  background-color : white;
+}
+ .heading {
+    position: absolute;
+    left: 0;
+    right: 70%;
+    top: 10%;
+    background-color: rgba(201, 157, 44, 0.3);
+    width: 30%;
+    margin: 0 auto;
+    padding: 50px;
+    }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left : 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 200px;
+  height: 200px;
+  perspective: 2000px;
+  margin-top: 120px;
+}
+
+#gobutton:link, #gobutton:hover, #gobutton:active {
+  position : absolute;
+  background-color : red;
+  padding : 20px 40px;
+  border-radius : 4px;
+}
+
+#gobutton2:link, #gobutton2:hover, #gobutton2:active {
+  position : absolute;
+  left : 120px;
+  background-color : red;
+  padding : 20px 40px;
+  border-radius : 4px;
+}
+
+.cube {
+  transition : 0.5s;
+  transition-timing-function : linear;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-2000px);
+  transform-style: preserve-3d;
+  background: black;
+}
+
+.cube figure {
+  margin: 0;
+  width: 196px;
+  height: 196px;
+  display: block;
+  position: absolute;
+  border: 3px solid black;
+  text-align : center;
+  background-color: gray;
+}
+
+.detail {
+  margin-top: 0px;
+  width: 80%;
+}
+
+.cube .front  { transform: rotateY(   0deg ) translateZ( 240px ); }
+.cube .back   { transform: rotateX( 180deg ) translateZ( 240px ); }
+.cube .top-front  { transform: rotateX(  45deg ) translateZ( 240px ); }
+.cube .bottom-back   { transform: rotateX( -45deg ) translateZ( 240px ); }
+.cube .top    { transform: rotateX(  90deg ) translateZ( 240px ); }
+.cube .bottom { transform: rotateX( -90deg ) translateZ( 240px ); }
+.cube .top-back {
+  transform : rotateX(45deg) translateZ(-240px);
+  img {
+    transform : rotate(180deg);
+  }
+}
+.cube .bottom-front {
+  transform : rotateX(-45deg) translateZ(-240px);
+  img {
+    transform : scaleX(-1) rotate(180deg);
+  }
+}
+
+.cube {
+  transition-timing-function : linear;
+  transform : translateZ(-2000px) rotateX(-180deg);
+  animation: rotating 0.5s linear infinite paused;
+}
+
+.cube.roue2 {
+  left : 120%;
+}
+
+.cube.roue3 {
+  right : 120%;
+}
+
+@keyframes rotating {
+  from {
+    transform: translateZ(-2000px) rotateX(0deg);
+  }
+  to {
+    transform: translateZ(-2000px) rotateX(360deg);
+  }
+}
+
+@keyframes lastRotating {
+  100% {
+    transform: translateZ(-2000px) rotateX(90deg);
+  }
+}
+
+@keyframes rotateRoueFolle {
+  0% {
+    transform : scale(1.2) rotate(0deg);
+  }
+  100% {
+    transform : scale(1.2) rotate(360deg);
+  }
+}
+
+.svgInterface {
+  position : absolute;
+  left : -153px;
+  top : -115px;
+}
+
+#roueFolle {
+  position : relative;
+  left : -307%;
+  top : -320%;
+  transform : scale(0.01);
+  z-index : -1;
+  transition : 2s;
+}
