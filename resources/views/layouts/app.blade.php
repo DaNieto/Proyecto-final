@@ -22,7 +22,7 @@
     }
 </style> -->
 <body>
-  
+
 
                      <!-- Navigation -->
         <div class="w3lsnavigation">
@@ -47,7 +47,7 @@
 
                 <div id="navbar" class="navbar-collapse navbar-right collapse" >
 
-                      
+
                         <li><a class="scroll" href="{{ route('home') }}">HOME</a></li>
                         <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
                         <li><a class="scroll" href="#wthreetabsaits">COLECCION</a></li>
@@ -55,7 +55,7 @@
                         <li><a class="scroll" href="#w3portfolioaits">JackPot</a></li>
                         <li><a class="scroll" href="#agilecontactw3ls">CONTACTO</a></li>
                     <!-- //aqui va el log y log out de laravel -->
-                 
+
 
                       <ul id="navbar" class="navbar-collapse navbar-right collapse" >
                     <li style="width:40px "><img class="control" src="images/g.png" height=5%></li>
@@ -74,7 +74,7 @@
                                     <p>
                                             <a href=# class="btn btn-primary btn-xs">
                                              <span class="glyphicon glyphicon-pencil " aria-hidden="true"></span>
-                                           
+
                                             Perfil
                                         </a>
                                         <hr>
@@ -82,17 +82,16 @@
                                         <a href="{{ route('logout') }}" class="btn btn-primary btn-xs"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Cerrar Secion
+                                            Cerrar sesión
                                         </a>
                                         <br>
                                         <p>
-                                      
-                                         <a href=# class="btn btn-primary btn-xs">
+
+                                         <a href="{{url('/consultar')}}" class="btn btn-primary btn-xs">
                                              <span class="fa fa-gamepad" aria-hidden="true"></span>
-                                       Carrito
-                                       
-                    </a>
-                                            
+                                         Carrito
+                                         </a>
+
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

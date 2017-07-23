@@ -14,7 +14,7 @@ class carritoController extends Controller
       $carrito=DB::table('carrito')
       ->join('productos','carrito.id_producto','=','productos.id_producto')
       ->join('usuarios','carrito.id_usuario','=','usuarios.id_usuario')
-      ->select('carrito.*','productos.nombre AS nom_producto','productos.precio AS prec_producto')
+      ->select('carrito.*','productos.nombre AS nombre','productos.precio AS precio')
       //aqui creo falta un where sobre el id_usuario
     }
 

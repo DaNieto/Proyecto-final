@@ -32,5 +32,6 @@ Route::get('/consultaCatalogo/{categoria}','juegosController@consultaCatalogo');
 
 //Route::get('/jackpot', 'jackpotController@index');
 
-Route::get('/carrito', 'carritoController@index');
-
+Route::get('/carrito/{id}', 'carritoController@consultar');
+Route::get('/carrito', 'carritoController@eliminar');
+Route::get('/carrito', 'carritoController@añadir');
