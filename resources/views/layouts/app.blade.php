@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,12 @@
     <link href="{{ asset('cssLog/app.css') }}" rel="stylesheet">
 
 </head>
+<!-- <style>
+    #control image-rendering: {
+        margin-right: 10;
+        height: 30;
+    }
+</style> -->
 <body>
   
 
@@ -51,7 +58,7 @@
                  
 
                       <ul id="navbar" class="navbar-collapse navbar-right collapse" >
-                    <li><img src="images/g.png" width="30" height="30"></li>
+                    <li style="width:40px "><img class="control" src="images/g.png" height=5%></li>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>

@@ -16,15 +16,21 @@ Route::get('/', function () {
 });
 
 Route::get('/proof', function () {
-    echo "texto";
+    return view('jackpot');
+    // echo "texto";
+    // Route::get('/jackpot', 'jackpotController@index');
 })->middleware('auth');
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/registraJuego', 'juegosController@registrar');
+Route::post('/guardaJuego','juegosController@guardar');
+Route::get('/consultaJuego/{id}', 'juegosController@consultaJuego');
+Route::get('/consultaCatalogo/{categoria}','juegosController@consultaCatalogo');
 
-Route::get('/jackpot', 'jackpotController@index');
+//Route::get('/jackpot', 'jackpotController@index');
 
 Route::get('/carrito', 'carritoController@index');
 
