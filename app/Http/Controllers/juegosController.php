@@ -13,7 +13,7 @@ class juegosController extends Controller
     public function registrar()
     {
     	$categorias=Categorias::all();
-        return view('registraJuego', compact('categorias'));
+        return view('registroJuego', compact('categorias'));
     }
     public function guardar(Request $juego)
     {
