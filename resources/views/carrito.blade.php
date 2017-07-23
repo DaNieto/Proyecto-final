@@ -19,7 +19,7 @@ extends('layouts.app')
 					</tr>
 				@endforeach
 			</table>
-			<a href="{{url(urlparametodosdepagoetc...)}}" class="btn col s12">Finalizar compra</a>
+			<a href=# class="btn col s12">Finalizar compra</a>
 		@else
 			<h2>No has seleccionado articulos para comprar...</h2>
 			<a href="{{url(/)}}" class="btn col s12">Seguir Comprando</a>

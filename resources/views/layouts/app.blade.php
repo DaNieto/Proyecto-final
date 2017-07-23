@@ -100,7 +100,8 @@
 
         <!-- //aqui termina el log y logout de laravel -->
                 </div><!-- //Navbar-Collapse -->
-
+ <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
 
                 </div>
             </div>
@@ -109,7 +110,6 @@
         @yield('content')
     </div>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+   
 </body>
 </html>

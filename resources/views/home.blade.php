@@ -140,45 +140,63 @@
         <div class="agileinfoplatformsgrids">
             <div class="col-md-3 w3agile_gallery_grid w3agile_gallery_grid1">
                 <div class="w3agile_gallery_image">
+
+                   
                     <figure>
+                    <a href="{{ route('login') }}">
                         <img src="images/platform-1.jpg" alt="Game Robo" class="img-responsive">
                         <figcaption>
                             <h4>PC</h4>
-                            <p><span><img src="images/platform-1-icon.png" alt="Game Robo"></span></p>
+                            
+                            <p><span><img src="images/platform-1-icon.png" alt="Game Robo"> </span> </p>
                         </figcaption>
+                        </a>
+                        
                     </figure>
+                    
+
                 </div>
             </div>
             <div class="col-md-3 w3agile_gallery_grid w3agile_gallery_grid2">
                 <div class="w3agile_gallery_image">
                     <figure>
+                    <a href="{{ route('login') }}">
                         <img src="images/platform-2.jpg" alt="Game Robo" class="img-responsive">
                         <figcaption>
                             <h4>Playstation</h4>
+                            
                             <p><span><img src="images/platform-2-icon.png" alt="Game Robo"></span></p>
                         </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
-            <div class="col-md-3 w3agile_gallery_grid w3agile_gallery_grid3">
+            <div class="col-md-3 w3agile_gallery_grid w3agile_gallery_grid3" >
                 <div class="w3agile_gallery_image">
-                    <figure>
-                        <img src="images/platform-3.jpg" alt="Game Robo" class="img-responsive">
+                    <figure >
+                    <a href="{{ route('login') }}">
+                        <img src="images/platform-3.jpg" alt="Game Robo" class="img-responsive" >
                         <figcaption>
                             <h4>XBOX</h4>
-                            <p><span><img src="images/platform-3-icon.png" alt="Game Robo"></span></p>
+                            
+                            <p><span><img src="images/platform-3-icon.png" alt="Game Robo" ></span></p>
                         </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
             <div class="col-md-3 w3agile_gallery_grid w3agile_gallery_grid4">
                 <div class="w3agile_gallery_image">
                     <figure>
+                    <a href="{{ route('login') }}">
                         <img src="images/platform-4.jpg" alt="Game Robo" class="img-responsive">
                         <figcaption>
+
                             <h4>WII</h4>
+                            
                             <p><span><img src="images/platform-4-icon.png" alt="Game Robo"></span></p>
                         </figcaption>
+                        </a>
                     </figure>
                 </div>
             </div>
@@ -1552,3 +1570,4 @@
 
 </html>
 @endsection
+

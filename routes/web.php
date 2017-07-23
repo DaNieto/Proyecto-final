@@ -28,3 +28,7 @@ Route::get('/jackpot', 'jackpotController@index');
 
 Route::get('/carrito', 'carritoController@index');
 
+Route::get('/categoriaXbox', 'categoriasController@index');
+
+Route::get('/details', 'detailsController@index');
+
