@@ -58,40 +58,11 @@
 				        </div>
 				    </div>
 				    <div class="product-image"> 
-				        <a class="cs-fancybox-thumbs cloud-zoom" rel="adjustX:30,adjustY:0,position:'right',tint:'#202020',tintOpacity:0.5,smoothMove:2,showTitle:true,titleOpacity:0.5" data-fancybox-group="thumb" href="imagesP/0001-2.jpg" title="Women Shorts" alt="Women Shorts">
-				           	<img src="imagesP/0001-2.jpg" alt="Women Shorts" title="Women Shorts" />
-				        </a>
+				        
+				           	<img src="imagesP/juegos/pc/f.jpg" alt="Women Shorts" title="Women Shorts" />
+				        
 				   </div>
-					<script type="text/javascript">
-						var prodGallery = jQblvg.parseJSON('{"prod_1":{"main":{"orig":"imagesP/0001-2.jpg","main":"imagesP/large/0001-2.jpg","thumb":"imagesP/small/0001-2.jpg","label":""},"gallery":{"item_0":{"orig":"imagesP/0001-2.jpg","main":"imagesP/large/0001-2.jpg","thumb":"imagesP/small/0001-2.jpg","label":""},"item_1":{"orig":"imagesP/0001-1.jpg","main":"imagesP/large/0001-1.jpg","thumb":"imagesP/small/0001-1.jpg","label":""},"item_2":{"orig":"imagesP/0001-5.jpg","main":"imagesP/large/0001-5.jpg","thumb":"imagesP/small/0001-5.jpg","label":""},"item_3":{"orig":"imagesP/0001-3.jpg","main":"imagesP/large/0001-3.jpg","thumb":"imagesP/small/0001-3.jpg","label":""},"item_4":{"orig":"imagesP/0001-4.jpg","main":"imagesP/large/0001-4.jpg","thumb":"imagesP/small/0001-4.jpg","label":""}},"type":"simple","video":false}}'),
-						    gallery_elmnt = jQblvg('.product-img-box'),
-						    galleryObj = new Object(),
-						    gallery_conf = new Object();
-						    gallery_conf.moreviewitem = '<a class="cs-fancybox-thumbs" data-fancybox-group="thumb"  href=""  title="" alt=""><img src="" src_main="" title="" alt="" /></a>';
-						    gallery_conf.animspeed = 200;
-						jQblvg(document).ready(function() {
-						    galleryObj[1] = new prodViewGalleryForm(prodGallery, 'prod_1', gallery_elmnt, gallery_conf, '.product-image', '.more-views', 'http:');
-						        jQblvg('.product-image .cs-fancybox-thumbs').absoluteClick();
-						    jQblvg('.cs-fancybox-thumbs').fancybox({ prevEffect : 'none', 
-						                             nextEffect : 'none',
-						                             closeBtn : true,
-						                             arrows : true,
-						                             nextClick : true, 
-						                             helpers: {
-						                               thumbs : {
-						                                   position: 'bottom'
-						                               }
-						                             }
-						                             });
-						    jQblvg('#wrap').css('z-index', '100');
-						            jQblvg('.more-views-container').elScroll({type: 'vertical', elqty: 4, btn_pos: 'border', scroll_speed: 400 });
-						        
-						});
-						
-						function initGallery(a,b,element) {
-						    galleryObj[a] = new prodViewGalleryForm(prods, b, gallery_elmnt, gallery_conf, '.product-image', '.more-views', '');
-						};
-					</script>
+					
 				</div>
 				</div>
 				</div>
@@ -100,16 +71,18 @@
 			<!-- start span1_of_1 -->
 			<div class="span1_of_1_des">
 				  <div class="desc1">
-					<h3>Lorem ipsum dolor sit amet laoret.</h3>
-					<h5>Rs. 499 <span>599</span>  <a href="#">click for offer</a></h5>
+					<h3>Fall Out 4</h3>
+					
 					<div class="available">
+						
+						
+						<p>It is a long established fact that a reader will be distracted by the readable contentContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from of a page when looking at its layout.</p>
 						<div class="btn_form">
 							<form>
 								<input type="submit" value="buy now" title="" />
 							</form>
 						</div>
-						<span><a href="#">login to save in wishlist </a></span>
-						<p>It is a long established fact that a reader will be distracted by the readable contentContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from of a page when looking at its layout.</p>
+						<h5><span>$599</span> a $499 </h5>  
 					</div>
 					<div class="share-desc">
 						<div class="share">
@@ -127,9 +100,7 @@
 			   	</div>
 			   	<div class="clear"></div>
 			   	<!-- start left content_bottom -->
-			   	<div class="left_content_btm">
-			   		<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-			   		<!-- start tabs -->
+			   	
 				   	<section class="tabs">
 		            <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked">
 			        <label for="tab-1" class="tab-label-1">overview</label>
@@ -137,8 +108,7 @@
 		            <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2">
 			        <label for="tab-2" class="tab-label-2">consumer</label>
 			
-		            <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3">
-			        <label for="tab-3" class="tab-label-3">semiconductor</label>
+		            
 	          
 				    <div class="clear-shadow"></div>
 					
@@ -163,18 +133,7 @@
 								<li>Set top boxes for HDTV and IPTV Player applications on various Operating Systems and Hardware Platforms</li>
 							</ul>
 						</div>
-				        <div class="content-3">
-				        	<p class="para top"><span>LOREM IPSUM</span> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined </p>
-							<ul>
-								<li>Research</li>
-								<li>Design and Development</li>
-								<li>Porting and Optimization</li>
-								<li>System integration</li>
-								<li>Verification, Validation and Testing</li>
-								<li>Maintenance and Support</li>
-							</ul>
-							<div class="clear"></div>
-						</div>
+				        
 			        </div>
 			        </section>
 		         	<!-- end tabs -->
@@ -184,56 +143,42 @@
 		<!-- start left_sidebar -->
 			<div class="left_sidebar">
 				<ul class="det_nav">
-					<li><a href="#">accessories</a></li>
-					<li><a href="#">safety and security</a></li>
-					<li><a href="#">specials</a></li>
-					<li><a href="#">accessories</a></li>
-					<li><a href="#">new products</a></li>
-					<li><a href="#">safety and security</a></li>
+					<li><a href="">Regresar</a></li>
 				</ul>
-				<h4>recent products</h4>
+				<h4>Juegos Nuevos!</h4>
 				<div class="left_products">
 					<div class="left_img">
-						<img src="imagesP/det_pic1.jpg" alt=""/>
+						<img src="imagesP/juegos/wii u/d.jpg" alt=""/>
 					</div>
 					<div class="left_text">
-						<p><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></p>
-						<span class="line">$72.00</span>
+						<p>El juego continúa desde la plataforma de desplazamiento literal de las series de Donkey Kong Country </a></p>
 						<span>$52.00</span>
 					</div>
 					<div class="clear"></div>
 				</div>
 				<div class="left_products">
 					<div class="left_img">
-						<img src="imagesP/det_pic2.jpg" alt=""/>
+						<img src="imagesP/juegos/ps4/c.jpg" alt=""/>
 					</div>
 					<div class="left_text">
-						<p><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></p>
-						<span class="line">$86.00</span>
+						<p> tu marsupial favorito, está de regreso. Gira, salta y vuelve a saltar mientras superas los desafíos y las épicas aventuras de los tres juegos originales</a></p>
+						
 						<span>$83.00</span>
 					</div>
 					<div class="clear"></div>
 				</div>
 				<div class="left_products">
 					<div class="left_img">
-						<img src="imagesP/det_pic1.jpg" alt=""/>
+						<img src="imagesP/juegos/pc/r.jpg" alt=""/>
 					</div>
 					<div class="left_text">
-						<p><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></p>
-						<span class="line">$76.00</span>
+						<p>Controla a tu personaje en una demostración de realidad paranormal mientras explora una mansión-granja en un intento por escapar del lugar</a></p>
+						
 						<span>$75.00</span>
 					</div>
 					<div class="clear"></div>
 				</div>
-				<h4>related colors</h4>
-				<ul class="color-list">
-							<li><a href="#"> <span class="color2"> </span><p class="red">Green</p></a></li>
-							<li><a href="#"> <span class="color3"> </span><p class="red">Blue</p></a></li>
-							<li><a href="#"> <span class="color4"> </span><p class="red">Yellow</p></a></li>
-							<li><a href="#"> <span class="color5"> </span><p class="red">Violet</p></a></li>
-							<li><a href="#"> <span class="color6"> </span><p class="red">Orange</p></a></li>
-							<li><a href="#"> <span class="color7"> </span><p class="red">Gray</p></a></li>
-					   </ul>
+				
 			</div>
           	    <div class="clear"></div>
 	       </div>	
@@ -241,97 +186,7 @@
 	</div>
 </div>
 </div>
-<!-- start footer -->
-<div class="footer_top">
-<div class="wrap">
-<div class="footer">
-	<!-- start grids_of_3 -->
-	<div class="span_of_3">
-		<div class="span1_of_3">
-			<h3>text edit</h3>
-			<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
-		</div>
-		<div class="span1_of_3">
-			<h3>twitter widget</h3>
-			<p><a href="#">@Contrarypopular</a> I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give <a href="#">@accountofsystem</a> </p>
-			<p class="top">19 days ago</p>
-			<p class="top"><a href="#">@Contrarypopular</a> I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give <a href="#">@accountofsystem</a> </p>
-			<p class="top">19 days ago</p>
-		</div>
-		<div class="span1_of_3">
-			<h3>flickr widget</h3>
-			<ul class="f_nav">
-				<li><a href="#"><img src="imagesP/f_pic1.jpg" alt="" /> </a></li>
-				<li><a href="#"><img src="imagesP/f_pic2.jpg" alt="" /> </a></li>
-				<li><a href="#"><img src="imagesP/f_pic3.jpg" alt="" /> </a></li>
-				<li><a href="#"><img src="imagesP/f_pic4.jpg" alt="" /> </a></li>
-				<li><a href="#"><img src="imagesP/f_pic5.jpg" alt="" /> </a></li>
-				<li><a href="#"><img src="imagesP/f_pic6.jpg" alt="" /> </a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-</div>
-</div>
-<!-- start footer -->
-<div class="footer_mid">
-<div class="wrap">
-<div class="footer">
-	<div class="f_search">
-		<form>
-			<input type="text" value="" placeholder="Enter email for newsletter" />
-			<input type="submit" value=""/>
-		</form>
-	</div>
-	<div class="soc_icons">
-			<ul>
-				<li><a class="icon1" href="#"></a></li>
-				<li><a class="icon2" href="#"></a></li>
-				<li><a class="icon3" href="#"></a></li>
-				<li><a class="icon4" href="#"></a></li>
-				<li><a class="icon5" href="#"></a></li>
-			</ul>	
-	</div>
-	<div class="clear"></div>
-</div>
-</div>
-</div>
-<!-- start footer -->
-<div class="footer_bg">
-<div class="wrap">
-<div class="footer">
-		<!-- scroll_top_btn -->
-	    <script type="text/javascript">
-			$(document).ready(function() {
-			
-				var defaults = {
-		  			containerID: 'toTop', // fading element id
-					containerHoverID: 'toTopHover', // fading element hover id
-					scrollSpeed: 1200,
-					easingType: 'linear' 
-		 		};
-				
-				
-				$().UItoTop({ easingType: 'easeOutQuart' });
-				
-			});
-		</script>
-		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
-		<!--end scroll_top_btn -->
-	<div class="f_nav1">
-		<ul>
-			<li><a href="#">home /</a></li>
-			<li><a href="#">support /</a></li>
-			<li><a href="#">Terms and conditions /</a></li>
-			<li><a href="#">Faqs /</a></li>
-			<li><a href="#">Contact us</a></li>
-		</ul>
-		</div>
-	<div class="copy">
-		<p class="link"><span>© All rights reserved | Template by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
-	</div>
-	<div class="clear"></div>
+
 </div>
 </div>
 </div>
