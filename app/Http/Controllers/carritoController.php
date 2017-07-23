@@ -31,4 +31,8 @@ class carritoController extends Controller
       $carrito->save();
       flash('Se añadió tu articulo.');
     }
+     public function index()
+    {
+        return view('categoriaXbox');
+    }
 }
