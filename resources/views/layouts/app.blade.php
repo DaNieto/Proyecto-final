@@ -25,7 +25,7 @@
 
 
                      <!-- Navigation -->
-        <div class="w3lsnavigation" style="position:static;top:0px">
+        <div class="w3lsnavigation" ><!--style="position:static;top:0px"-->
             <nav class="navbar navbar-inverse agilehover-effect wthreeeffect navbar-default">
 
                 <div class="navbar-header">

@@ -15,19 +15,30 @@ Route::get('/', function () {
     return view('home');
 });
 
-//Route::get('/proof', function () {
-    //return view('jackpot');
-    // echo "texto";
-     Route::get('/jackpot', 'jackpotController@index');
-//})->middleware('auth');
+Route::get('/agregaJuego', function(){
+    if(Auth::guest()){
+        return Redirect::route('home');
+    }else{
+        //cambiar caja de ahorro por rol de administrador
+        if(Auth::user()->name == 'luis')
+            {
+                return Redirect::to('/registraJuego');
+            }else{
 
+            }
+            if(Auth::user()->name != 'luis'){
+                return Redirect::to('/')->with('danger','No puedes acceder a esa seccion');
+
+            }
+    }
+});
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/registraJuego', 'juegosController@registrar');
-Route::post('/guardaJuego','juegosController@guardar');
-Route::get('/consultaJuego/{id}', 'juegosController@consultaJuego');
+Route::get('/registraJuego', 'juegosController@registrar')->middleware('auth');
+Route::post('/guardaJuego','juegosController@guardar')->name('guardar')->middleware('auth');
+Route::get('/consultaJuego/{id}', 'juegosController@consultaJuego')->middleware('auth');
 Route::get('/consultaCatalogo/{categoria}','juegosController@consultaCatalogo');
 
  //Route::get('/jackpot', 'jackpotController@index');
@@ -49,7 +60,7 @@ Route::get('/categoriaWiiu', 'categoriasController@index3');
 
 
  //vistas juegos PC
- Route::get('/details', 'detailsController@index');
+Route::get('/details/{id}', 'juegosController@consultaJuego');
 
 
 Route::get('/carrito/{id}', 'carritoController@consultar');

@@ -27,26 +27,23 @@ class juegosController extends Controller
     }
     public function consultaJuego($id) //por juego individual dentro del catalogo
     {
-    	// $juego=Productos::all();
-    	$juego=Productos::on('other')//->find(1);
-    		->where('id_producto','=',$id)
-    		->select('nombre','precio','descripcion')
-    		->first();
-    	// dd($image);
-    	 return view('consultaJuego', compact('juego'));
+        // $juego=Productos::all();
+        $juego=Productos::on('other')//->find(1);
+            ->join('categoria','productos.id_categoria','=','categoria.id_categoria')
+            ->where('id_producto','=',$id)
+            ->select('productos.*','categoria.nombre AS categoria')
+            ->first();
+        // dd($juego);
+         return view('details', compact('juego','id'));
     }
     public function consultaCatalogo($categoria)
     {
     	$catalogo=Productos::on('other')
-    		->where('productos.id_producto','=',$categoria)
-    		->join('categoria','productos.id_producto','=','categoria.id_categoria')
+    		->where('productos.id_categoria','=',$categoria)
+    		->join('categoria','productos.id_categoria','=','categoria.id_categoria')
     		->select('productos.*','categoria.id_categoria')
-    		->paginate(8);
-    	$plataforma=Categorias::on('other')
-    		->where('id_categoria','=',$categoria)
-    		->Select('nombre','descripcion')
-    		->first();
-
-    	return view('consultaCatalogo',compact('catalogo','plataforma'));
+    		->paginate(3);
+            
+    	return view('categoriaView',compact('catalogo','categoria'));
     }
 }
