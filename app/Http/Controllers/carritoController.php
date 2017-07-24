@@ -9,12 +9,15 @@ use DB;
 
 class carritoController extends Controller
 {
-    public function consultar()
+    public function consultar($id)
     {
-      $carrito=DB::table('carrito')
-      ->join('productos','carrito.id_producto','=','productos.id_producto')
+      $carrito=modelocarrito::on('other')
+      ->where('carrito.id_usuario','=',$id)
       ->join('usuarios','carrito.id_usuario','=','usuarios.id_usuario')
+      ->join('productos','carrito.id_producto','=','productos.id_producto')
       ->select('carrito.*','productos.nombre AS nombre','productos.precio AS precio')
+      ->get();
+      return view('carrito',compact ('carrito'));
       //aqui creo falta un where sobre el id_usuario
     }
 
@@ -31,8 +34,9 @@ class carritoController extends Controller
       $carrito->save();
       flash('Se añadió tu articulo.');
     }
+
      public function index()
     {
-        return view('categoriaXbox');
+        return view('carrito');
     }
 }
