@@ -12,7 +12,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('cssLog/app.css') }}" rel="stylesheet">
+    <link href="{{ ('cssLog/app.css') }}" rel="stylesheet">
 
 </head>
 <!-- <style>

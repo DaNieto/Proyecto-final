@@ -34,6 +34,12 @@ background: url("../imagesLog/1.jpg") 0px 0px no-repeat;
 background-size:cover;
 background-attachment: fixed;
 }
+.navbar-inverse .navbar-brand {
+        color: ;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 40px;
+        line-height: 45px;
+    }
 
 @font-face{
 font-family: "Audiowide-Regular";

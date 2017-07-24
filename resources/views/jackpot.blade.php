@@ -1,5 +1,6 @@
 @extends('layouts.app')
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Press+Start+2P"         type="text/css" media="all">
 
 
 @section('content')

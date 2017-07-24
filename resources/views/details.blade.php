@@ -1,5 +1,6 @@
 @extends('layouts.app')
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Press+Start+2P"         type="text/css" media="all">
 
 @section('content')
 <!DOCTYPE html>
@@ -33,28 +34,7 @@
 				        <div class="product-img-box">
 				    <div class="more-views">
 				        <div class="more-views-container">
-				        <ul>
-				            <li>
-				            	<a class="cs-fancybox-thumbs" data-fancybox-group="thumb"  href=""  title="" alt="">
-				            	<img src="" src_main=""  title="" alt="" /></a>            
-				            </li>
-				            <li>
-				            	<a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href=""  title="" alt="">
-				            	<img src="" src_main=""  title="" alt="" /></a>
-				            </li>
-				            <li>
-				            	<a class="cs-fancybox-thumbs" data-fancybox-group="thumb"  href=""  title="" alt="">
-				            	<img src="" src_main=""  title="" alt="" /></a> 
-				            </li>
-				            <li>
-				            	<a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href=""  title="" alt="">
-				            	<img src="" src_main="" title="" alt="" /></a>  
-				            </li>
-				            <li>
-				            	<a class="cs-fancybox-thumbs" data-fancybox-group="thumb"  href=""  title="" alt="">
-				            	<img src="" src_main="" title="" alt="" /></a>
-				            </li>
-				          </ul>
+				        
 				        </div>
 				    </div>
 				    <div class="product-image"> 
