@@ -12,7 +12,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ ('cssLog/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('cssLog/app.css') }}" rel="stylesheet">
 
 </head>
 <!-- <style>
@@ -25,7 +25,7 @@
 
 
                      <!-- Navigation -->
-        <div class="w3lsnavigation">
+        <div class="w3lsnavigation" style="position:static;top:0px">
             <nav class="navbar navbar-inverse agilehover-effect wthreeeffect navbar-default">
 
                 <div class="navbar-header">
@@ -57,7 +57,7 @@
                     <!-- //aqui va el log y log out de laravel -->
 
 
-                      <ul id="navbar" class="navbar-collapse navbar-right collapse" >
+                      <ul id="navbar" class="navbar-collapse navbar-right collapse">
                     <li style="width:40px "><img class="control" src="images/g.png" height=5%></li>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
@@ -82,15 +82,16 @@
                                         <a href="{{ route('logout') }}" class="btn btn-primary btn-xs"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Cerrar sesión
+                                            Cerrar Secion
                                         </a>
                                         <br>
                                         <p>
 
-                                         <a href="{{url('/consultar')}}" class="btn btn-primary btn-xs">
+                                         <a href=# class="btn btn-primary btn-xs">
                                              <span class="fa fa-gamepad" aria-hidden="true"></span>
-                                         Carrito
-                                         </a>
+                                       Carrito
+
+                    </a>
 
                                         </a>
 
@@ -106,8 +107,7 @@
 
         <!-- //aqui termina el log y logout de laravel -->
                 </div><!-- //Navbar-Collapse -->
- <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+
 
                 </div>
             </div>
@@ -116,6 +116,7 @@
         @yield('content')
     </div>
 
-   
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
