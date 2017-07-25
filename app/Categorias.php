@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categorias extends Model
 {
-    protected $connection ='other';
+    // protected $connection ='other';
     protected $table = 'categoria';
 }

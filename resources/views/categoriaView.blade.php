@@ -161,7 +161,7 @@ onload=function(){
 <br>
 <br>
 <br>
-<section>
+<section></section>tion>
 <!-- start main -->
 <link href="../cssP/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--- start-mmmenu-script-->
@@ -172,6 +172,7 @@ onload=function(){
 
 	<!-- start grids_of_3 -->
 	<div class="grids_of_31" style="">
+	
 	@foreach($catalogo as $a)
 	<div id="imageid" class='{{$a->image}}'></div>
 		<div class="grid1_of_31" style="width:25%;height: 80%">
@@ -182,11 +183,11 @@ onload=function(){
 				<span class="price1 bg">on sale</span>
 				<td>
 						<a href="{{url('/consultaJuego')}}/{{$a->id_producto}}" class="btn btn-primary btn-xs">
-							<span class="glyphicon glyphicon-eye-open"></span>vista
+							<span class="glyphicon glyphicon-eye-open">vista</span>
 						</a>
 						
 						<a href="{{url('/')}}" class="btn btn-success btn-xs">
-							<span class="glyphicon glyphicon-shopping-cart"></span>Añadir al carro
+							<span class="glyphicon glyphicon-shopping-cart">Añadir al carro</span>
 						</a>
 				</td>
 			</a>

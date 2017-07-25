@@ -12,7 +12,7 @@ use DB;
     public function consultar($id)
      {
 
-      $carrito=modelocarrito::on('other')
+      $carrito=DB::table('carrito')
       ->where('carrito.id_usuario','=',$id)
        ->join('usuarios','carrito.id_usuario','=','usuarios.id_usuario')
       ->join('productos','carrito.id_producto','=','productos.id_producto')

@@ -20,13 +20,13 @@ Route::get('/agregaJuego', function(){
         return Redirect::route('home');
     }else{
         //cambiar caja de ahorro por rol de administrador
-        if(Auth::user()->name == 'luis')
+        if(Auth::user()->tipo == '1')
             {
                 return Redirect::to('/registraJuego');
             }else{
 
             }
-            if(Auth::user()->name != 'luis'){
+            if(Auth::user()->tipo == '0'){
                 return Redirect::to('/')->with('danger','No puedes acceder a esa seccion');
 
             }
