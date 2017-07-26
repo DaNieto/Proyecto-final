@@ -182,12 +182,12 @@ onload=function(){
 				<span class="price">$ {{$a->precio}}</span>
 				<span class="price1 bg">on sale</span>
 				<td>
-						<a href="{{url('/consultaJuego')}}/{{$a->id_producto}}" class="btn btn-primary btn-xs">
+						<a href="{{url('/consultaJuego')}}/{{$a->id_producto}}" class="btn btn-primary btn-sm">
 							<span class="glyphicon glyphicon-eye-open">vista</span>
 						</a>
 						
-						<a href="{{url('/')}}" class="btn btn-success btn-xs">
-							<span class="glyphicon glyphicon-shopping-cart">Añadir al carro</span>
+						<a href="{{url('/agregacarrito')}}/{{$a->id_producto}}" class="btn btn-success btn-sm">
+							<span class="glyphicon glyphicon-shopping-cart"></span> Agregar al Carrito
 						</a>
 				</td>
 			</a>

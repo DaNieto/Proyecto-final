@@ -26,8 +26,8 @@
 							<span class="glyphicon glyphicon-eye-open"></span>vista
 						</a>
 						
-						<a href="{{url('/')}}" class="btn btn-success btn-xs">
-							<span class="glyphicon glyphicon-shopping-cart"></span>Añadir al carro
+						<a href="{{url('/agregacarrito')}}/{{$juego->id_producto}}" class="btn btn-sm btn-success">
+								<span class="glyphicon glyphicon-shopping-cart"></span> Agregar al Carrito
 						</a>
 						<!-- <a href="{{url('/eliminarAlumno')}}/{{$a->id}}" class="btn btn-danger btn-xs"> 
 							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>	
