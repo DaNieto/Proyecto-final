@@ -48,13 +48,12 @@ Route::get('/carrito/{id}', 'carritoController@consultar');
 Route::get('/carrito', 'carritoController@eliminar');
 Route::get('/carrito', 'carritoController@añadir');
 
-<<<<<<< HEAD
 
 
 Route::get('/carrito', 'carritoController@index');
-=======
+
  Route::get('/carrito', 'carritoController@index');
->>>>>>> 4d653bb50b12f62a83a621e7f7ba74b3a4d9d7f8
+
 
  //categorias
 
@@ -68,18 +67,15 @@ Route::get('/categoriaWiiu', 'categoriasController@index3');
  //vistas juegos PC
 Route::get('/details/{id}', 'juegosController@consultaJuego');
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 4d653bb50b12f62a83a621e7f7ba74b3a4d9d7f8
+
+
 
 Route::get('/carrito/{id}', 'carritoController@consultar');
 Route::get('/carrito', 'carritoController@eliminar');
 Route::get('/carrito', 'carritoController@añadir');
-<<<<<<< HEAD
 
 
 Route::get('/contacto', 'contactoController@index');
 Route::get('/perfil', 'contactoController@index1');
-=======
->>>>>>> 4d653bb50b12f62a83a621e7f7ba74b3a4d9d7f8
+
