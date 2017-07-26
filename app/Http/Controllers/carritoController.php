@@ -36,6 +36,14 @@ use DB;
        flash('Se añadió tu articulo.');
      }
 
+     public function ticket($id_venta)
+         {
+            $venta = $this->ventas->find($id_venta);
+            $usuario = $ventas->usuarios;
+            $ticket = $this->detalle_venta->ticket($id_venta);
+            return view('ticket',compact('ventas','detalle_venta','usuarios'));
+        }
+
       public function index()
      {
         return view('carrito');
