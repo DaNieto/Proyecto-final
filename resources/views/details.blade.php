@@ -167,7 +167,7 @@ onload=function(){
 							<a href="{{url('/consultaCatalogo')}}/{{$juego->id_categoria}}"  class="btn btn-sm btn-primary">
 								<span class="glyphicon  glyphicon-arrow-left"></span> Regresar Catalogo
 							</a>
-							<a href="{{url('/')}}" class="btn btn-sm btn-success">
+							<a href="{{url('/agregacarrito')}}/{{$juego->id_producto}}" class="btn btn-sm btn-success">
 								<span class="glyphicon glyphicon-shopping-cart"></span> Agregar al Carrito
 							</a>
 						</div>

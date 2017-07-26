@@ -28,7 +28,7 @@ class juegosController extends Controller
     public function consultaJuego($id) //por juego individual dentro del catalogo
     {
         // $juego=Productos::all();
-        $juego=Productos::on('other')//->find(1);
+        $juego=DB::table('productos')//->find(1);
             ->join('categoria','productos.id_categoria','=','categoria.id_categoria')
             ->where('id_producto','=',$id)
             ->select('productos.*','categoria.nombre AS categoria')
@@ -38,7 +38,7 @@ class juegosController extends Controller
     }
     public function consultaCatalogo($categoria)
     {
-    	$catalogo=Productos::on('other')
+    	$catalogo=DB::table('productos')
     		->where('productos.id_categoria','=',$categoria)
     		->join('categoria','productos.id_categoria','=','categoria.id_categoria')
     		->select('productos.*','categoria.id_categoria')
