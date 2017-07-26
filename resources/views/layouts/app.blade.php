@@ -48,7 +48,7 @@
                 <div id="navbar" class="navbar-collapse navbar-right collapse" >
 
 
-                        <li><a  href="{{ url('home') }}">HOME</a></li>
+                        <li><a  href="{{ url('') }}">HOME</a></li>
                         <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
                         <li><a class="scroll" href="#wthreetabsaits">COLECCION</a></li>
                         <li><a class="scroll" href="#wthreeblogsaits">BLOG</a></li>

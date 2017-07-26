@@ -43,9 +43,9 @@ Route::get('/consultaCatalogo/{categoria}','juegosController@consultaCatalogo');
 
 Route::get('/details/{id}', 'juegosController@consultaJuego');
 
-Route::get('/carrito/{id}', 'carritoController@consultar');
+Route::get('/carrito/{id}', 'carritoController@consultar')->middleware('auth');
 Route::get('/eliminacarrito/{id}', 'carritoController@eliminar');
-Route::get('/agregacarrito/{id}', 'carritoController@añadir');
+Route::get('/agregacarrito/{id}', 'carritoController@añadir')->middleware('auth');
 
 Route::get('/contacto', 'contactoController@index');
 Route::get('/perfil', 'contactoController@index1');
