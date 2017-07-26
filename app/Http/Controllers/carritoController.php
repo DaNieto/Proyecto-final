@@ -44,6 +44,7 @@ use DB;
       ->where('id_producto','=',$datos)
       ->select('id_categoria')
       ->first();
+      
       $cat=$categoria->id_categoria;
       $user=Auth::user();
       // dd($productos);

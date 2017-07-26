@@ -43,16 +43,6 @@ Route::get('/consultaCatalogo/{categoria}','juegosController@consultaCatalogo');
 
 Route::get('/jackpot', 'jackpotController@index');
 
- // Route::get('/carrito', 'carritoController@index');
-
- //categorias
-
-// Route::get('/categoriaXbox', 'categoriasController@index');
-// Route::get('/categoriaPs4', 'categoriasController@index1');
-// Route::get('/categoriaPc', 'categoriasController@index2');
-// Route::get('/categoriaWiiu', 'categoriasController@index3');
-
-
  //vistas juegos PC
 Route::get('/details/{id}', 'juegosController@consultaJuego');
 

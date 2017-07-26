@@ -87,11 +87,9 @@
                                         <br>
                                         <p>
 
-                                         <a href=# class="btn btn-primary btn-xs">
-                                             <span class="fa fa-gamepad" aria-hidden="true"></span>
-                                       Carrito
-
-                    </a>
+                                        <a href="{{url('/carrito')}}/{{Auth::user()->id}}" class="btn btn-primary btn-xs">
+                                             <span class="fa fa-gamepad" aria-hidden="true"></span>Carrito
+                                        </a>
 
                                         </a>
 
