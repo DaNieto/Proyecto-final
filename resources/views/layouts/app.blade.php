@@ -81,7 +81,7 @@
                                         <a href="{{ route('logout') }}" class="btn btn-primary btn-xs"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Cerrar Secion
+                                            Cerrar sesión
                                         </a>
                                         <hr>
                                         <p>
