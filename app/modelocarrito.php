@@ -6,6 +6,6 @@
 
   class modelocarrito extends Model
   {
-    protected $connection='other';
+    // protected $connection='other';
     protected $table='carrito';
   }

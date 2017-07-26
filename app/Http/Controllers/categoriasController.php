@@ -25,4 +25,5 @@ class categoriasController extends Controller
      {
      	return view('categoriaWiiu');
      }
+    
 }

@@ -143,7 +143,7 @@
 
                    
                     <figure>
-                    <a href="{{ route('login') }}">
+                    <a href="{{url('/consultaCatalogo')}}/1">
                         <img src="images/platform-1.jpg" alt="Game Robo" class="img-responsive">
                         <figcaption>
                             <h4>PC</h4>
@@ -160,7 +160,7 @@
             <div class="col-md-3 w3agile_gallery_grid w3agile_gallery_grid2">
                 <div class="w3agile_gallery_image">
                     <figure>
-                    <a href="{{ route('login') }}">
+                    <a href="{{url('/consultaCatalogo')}}/2">
                         <img src="images/platform-2.jpg" alt="Game Robo" class="img-responsive">
                         <figcaption>
                             <h4>Playstation</h4>
@@ -174,7 +174,7 @@
             <div class="col-md-3 w3agile_gallery_grid w3agile_gallery_grid3" >
                 <div class="w3agile_gallery_image">
                     <figure >
-                    <a href="{{ route('login') }}">
+                    <a href="{{url('/consultaCatalogo')}}/3">
                         <img src="images/platform-3.jpg" alt="Game Robo" class="img-responsive" >
                         <figcaption>
                             <h4>XBOX</h4>
@@ -188,7 +188,7 @@
             <div class="col-md-3 w3agile_gallery_grid w3agile_gallery_grid4">
                 <div class="w3agile_gallery_image">
                     <figure>
-                    <a href="{{ route('login') }}">
+                    <a href="{{url('/consultaCatalogo')}}/4">
                         <img src="images/platform-4.jpg" alt="Game Robo" class="img-responsive">
                         <figcaption>
 

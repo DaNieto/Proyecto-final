@@ -25,7 +25,7 @@
 
 
                      <!-- Navigation -->
-        <div class="w3lsnavigation" style="position:static;top:0px">
+        <div class="w3lsnavigation" ><!--style="position:static;top:0px"-->
             <nav class="navbar navbar-inverse agilehover-effect wthreeeffect navbar-default">
 
                 <div class="navbar-header">
@@ -52,8 +52,8 @@
                         <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
                         <li><a class="scroll" href="#wthreetabsaits">COLECCION</a></li>
                         <li><a class="scroll" href="#wthreeblogsaits">BLOG</a></li>
-                        <li><a class="scroll" href="#w3portfolioaits">JackPot</a></li>
-                        <li><a class="scroll" href="#agilecontactw3ls">CONTACTO</a></li>
+                        <li><a  href="{{url('/jackpot')}}">JackPot</a></li>
+                        <li><a  href="{{url('/contacto')}}">CONTACTO</a></li>
                     <!-- //aqui va el log y log out de laravel -->
 
 
@@ -72,9 +72,8 @@
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
                                     <p>
-                                            <a href=# class="btn btn-primary btn-xs">
-                                             <span class="glyphicon glyphicon-pencil " aria-hidden="true"></span>
-
+                                        <a href="{{url('/perfil')}}" class="btn btn-primary btn-xs">
+                                            <span class="glyphicon glyphicon-pencil " aria-hidden="true"></span>
                                             Perfil
                                         </a>
                                         <hr>
@@ -84,15 +83,11 @@
                                                      document.getElementById('logout-form').submit();">
                                             Cerrar Secion
                                         </a>
-                                        <br>
+                                        <hr>
                                         <p>
 
-                                         <a href=# class="btn btn-primary btn-xs">
-                                             <span class="fa fa-gamepad" aria-hidden="true"></span>
-                                       Carrito
-
-                    </a>
-
+                                        <a href="{{url('/carrito')}}/{{Auth::user()->id}}" class="btn btn-primary btn-xs">
+                                             <span class="fa fa-gamepad" aria-hidden="true"></span>Carrito
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
