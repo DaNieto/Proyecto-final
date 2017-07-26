@@ -59,8 +59,21 @@
 <!-- Body-Starts-Here -->
 <body>
 
+
 	<h1 class="carrito">Carrito</h1>
 
+	<table>
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Correo</th>
+				<th>Direccion</th>
+				<th>Codigo postal</th>
+				<th>Telefono</th>
+				<th>No. tarjeta</th>
+			</tr>
+		</thead>
+	</table>
 	<!-- Content-Starts-Here -->
 	<div class="container">
 
