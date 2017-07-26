@@ -4,10 +4,16 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
-html, body{
+html{
 font-family: 'Open Sans', sans-serif;
  font-size: 100%;
  background: #fff;
+}
+body{
+text-align: center;
+background: url("../imagesPC/bg.jpg") 0px 0px no-repeat;
+background-size:cover;
+background-attachment: fixed;
 }
 
 body a {
@@ -1108,10 +1114,10 @@ p.lom{
     margin: 0 auto;
 	}
 	.sign-up-form {
-    padding: 3em 5em;
+    padding: 0em 5em;
 }
 .sign-up-form p{
-	    color: #777;
+	    color: #000;
     font-size: 0.9em;
     margin: .5em 0 3em;
     line-height: 1.7em;
@@ -2773,6 +2779,7 @@ ul.bottom i {
 		margin-top: 1em;
 		padding: 9px 0;
 	}
+
 	.main {
 		float: right;
 		width: 100%;

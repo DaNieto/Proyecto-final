@@ -50,7 +50,7 @@ Route::get('/agregacarrito/{id}', 'carritoController@añadir');
 Route::get('/contacto', 'contactoController@index');
 Route::get('/perfil', 'contactoController@index1');
 
- //Route::get('/jackpot', 'jackpotController@index');
+Route::get('/jackpot', 'jackpotController@index');
 
  //categorias
 
