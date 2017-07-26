@@ -10,20 +10,13 @@
 					<tbody>
 						<tr>
 							<th>Nombre</th>
-							<td>{{$usuario->nombre}}</td>
+							<td>{{Auth::user()->name}}</td>
 						</tr>
 						<tr>
 							<th >Correo Electronico</th>
-							<td>{{$usuario->email}}</td>
+							<td>{{Auth::user()->email}}</td>
 						</tr>
 						<tr>
-							<th>País</th>
-							<td>{{$usuario->pais}}</td>
-						</tr>
-						<tr>
-							<th>Ciudad</th>
-							<td>{{$usuario->ciudad}}</td>
-						</tr>
 						<tr>
 							<th>Dirección</th>
 							<td>{{$usuario->direccion}}</td>
@@ -42,14 +35,12 @@
 						</tr>
 					</tbody>
 				</table>
-				<h2>Descripción de Venta</h2>
 				<table class="bordered">
 					<thead>
 						<tr>
 							<th>Nombre</th>
-							<th>Descripcion</th>
 							<th>Plataforma</th>
-							<th>Precio (Subtotal)</th>
+							<th>Precio</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -59,7 +50,7 @@
 						@foreach($ticket as $thisventa)
 							<tr>
 								<td>
-									<a href="{{url('view/'.$thisventa->descripcion->producto>id_producto)}}">
+									<a href="{{url('view/'.$thisventa->descripcion->producto->id_producto->)}}">
 										{{$thisventa->nombre}}
 									</a>
 								</td>
@@ -70,7 +61,7 @@
 									 {{$thisventa->categoria}}
 								</td>
 								<td>
-									 {{$thisventa->precio*descuento}}<small>MXN</small>
+									 {{$thisventa->precioxdesc}}<small>MXN</small>
 								</td>
 
 							</tr>
