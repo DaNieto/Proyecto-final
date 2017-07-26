@@ -41,12 +41,22 @@ Route::post('/guardaJuego','juegosController@guardar')->name('guardar')->middlew
 Route::get('/consultaJuego/{id}', 'juegosController@consultaJuego')->middleware('auth');
 Route::get('/consultaCatalogo/{categoria}','juegosController@consultaCatalogo');
 
-Route::get('/jackpot', 'jackpotController@index');
-
- //vistas juegos PC
 Route::get('/details/{id}', 'juegosController@consultaJuego');
-
 
 Route::get('/carrito/{id}', 'carritoController@consultar');
 Route::get('/eliminacarrito/{id}', 'carritoController@eliminar');
 Route::get('/agregacarrito/{id}', 'carritoController@añadir');
+
+Route::get('/contacto', 'contactoController@index');
+Route::get('/perfil', 'contactoController@index1');
+
+ //Route::get('/jackpot', 'jackpotController@index');
+
+ //categorias
+
+// Route::get('/categoriaXbox', 'categoriasController@index');
+// Route::get('/categoriaPs4', 'categoriasController@index1');
+// Route::get('/categoriaPc', 'categoriasController@index2');
+// Route::get('/categoriaWiiu', 'categoriasController@index3')
+
+
