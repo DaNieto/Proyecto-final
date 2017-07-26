@@ -48,13 +48,13 @@
                 <div id="navbar" class="navbar-collapse navbar-right collapse" >
 
 
-                        <li><a class="scroll" href="{{ route('home') }}">HOME</a></li>
+                        <li><a  href="{{ url('home') }}">HOME</a></li>
                         <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
                         <li><a class="scroll" href="#wthreetabsaits">COLECCION</a></li>
                         <li><a class="scroll" href="#wthreeblogsaits">BLOG</a></li>
-                        <li><a  href="{{url('/jackpot')}}">JackPot</a></li>
-                        <li><a  href="{{url('/contacto')}}">CONTACTO</a></li>
-                    <!-- //aqui va el log y log out de laravel -->
+                        <li><a  href="{{url('jackpot')}}">JackPot</a></li>
+                        <li><a  href="{{url('contacto')}}">CONTACTO</a></li>
+                    <!-- //aqui va el log y log out de laravel #wthreeblogsaits-->
 
 
                       <ul id="navbar" class="navbar-collapse navbar-right collapse">
@@ -65,7 +65,7 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <a href="{{ url('home') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 

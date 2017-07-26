@@ -1,6 +1,6 @@
 @extends('layouts.app')
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Press+Start+2P"         type="text/css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Press+Start+2P" type="text/css" media="all">
 
 @section('content')
 <!DOCTYPE HTML>
@@ -15,137 +15,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Open+Sans:700,700italic,800,300,300italic,400italic,400,600,600italic' rel='stylesheet' type='text/css'>
 <!--Custom-Theme-files-->
-	<link href="cssPC/style.css" rel='stylesheet' type='text/css' />	
-	<script src="js/jquery.min.js"> </script>
+<!-- 	<link href="cssPC/style.css" rel='stylesheet' type='text/css' />	
+ -->	<script src="js/jquery.min.js"> </script>
 <!--/script-->
-<script type="text/javascript" src="jsPC/move-top.js"></script>
-<script type="text/javascript" src="jsPC/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-</script>
+
 
 </head>
-<body>
-	<!-- header-section-starts -->
-      <div class="h-top" id="home">
-		   <div class="top-header">
-				  <ul class="cl-effect-16 top-nag">
-						<li><a class="active" href="registration.html" data-hover="Registration">Informacion de perfil</a></li> 
-						<li><a href="about.html" data-hover="About">About</a></li>
-						<li><a href="services.html" data-hover="SERVICES">SERVICES</a></li>
-						<li><a href="login.html" data-hover="Login">Login</a></li>
-						<li><a href="contact.html" data-hover="CONTACT">Contact</a></li>
-					</ul>
-					<div class="search-box">
-					    <div class="b-search">
-								<form>
-										<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-										<input type="submit" value="">
-								</form>
-							</div>
-						</div>
-
-					<div class="clearfix"></div>
-				</div>
-       </div>
-	
-				    
-
-					
-					<!-- script-for-nav -->
-					<script>
-						$( "span.menu" ).click(function() {
-						  $( ".top-menu ul" ).slideToggle(300, function() {
-							// Animation complete.
-						  });
-						});
-					</script>
-				<!-- script-for-nav --> 	
-					<ul class="side-icons">
-							<li><a class="fb" href="#"></a></li>
-							<li><a class="twitt" href="#"></a></li>
-							<li><a class="goog" href="#"></a></li>
-							<li><a class="drib" href="#"></a></li>
-					   </ul>
-			    </div>
-			</div>
-	<div class="geo">
-	<!-- register -->
-			<div class="sign-up-form">
-				 <h3 class="tittle">Informacion de Perfil <i class="glyphicon glyphicon-pencil"></i></h3>
-					
-				<div class="sign-up">
-					 <h3 class="tittle reg">Informacion Personal <i class="glyphicon glyphicon-plus"></i></h3>
-					<div class="sign-u">
-						<div class="sign-up1">
-							<h4 class="a">Nombre* :</h4>
-						</div>
-						<div class="sign-up2">
-							<form>
-								<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-
-							</form>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="sign-u">
-						<div class="sign-up1">
-							<h4 class="b">Direccion* :</h4>
-						</div>
-						<div class="sign-up2">
-							<form>
-									<input type="text" class="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}">
-
-							</form>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="sign-u">
-						<div class="sign-up1">
-							<h4 class="c">* :</h4>
-						</div>
-						<div class="sign-up2">
-							<form>
-								 <input type="text" class="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}">
-
-							</form>
-
-						</div>
-
-						<div class="clearfix"> </div>
-						<div class="sign-u">
-						<div class="sign-up1">
-							<h4 class="b">Last Name* :</h4>
-						</div>
-						<div class="sign-up2">
-							<form>
-									<input type="text" class="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}">
-
-							</form>
-						</div>
-						<div class="sign-u">
-						<div class="sign-up1">
-							<h4 class="b">Last Name* :</h4>
-						</div>
-						<div class="sign-up2">
-							<form>
-									<input type="text" class="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}">
-
-							</form>
-						</div>
-				
-					<form>
-						<input type="submit" value="Submit">
-					</form>
-					<br>
-					<br>
-				</div>
+<body style="background-image:url('imagesPC/bg.jpg');background-repeat: no-repeat;background-size: 100%")>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3 class="tittle" style="margin-left: -70%"><b><ins>Informacion de Perfil:</ins> <sup><i>{{Auth::user()->name}}</i></subp</b>  <i class="glyphicon glyphicon-pencil"></i></h3>
+<!-- <h3>Informacion personal: </h3> -->
+	<form action="{{url('/guardarAlumno')}}" method="POST" style="margin-left:15%; margin-right: 15%">
 		
+			<input id="token" type="hidden" name="_token" value="{{ csrf_token() }}">
+			<div class="form-group">
+				<label for="dirección">Dirección:</label>
+					<input type="text" class="form-control" name="dirección" required>
+			</div>
+			<div class="form-group">
+				<label for="cp">Codigo postal</label>
+					<input type="text" class="form-control" name="cp" required>
+			</div>
+			<div class="form-group">
+				<label for="telefono">Telefono:</label>
+					<input type="number" class="form-control" name="telefono" required>
+			</div>
+			<div class="form-group">
+				<label for="id_tarjeta">Num. tarjeta:</label>
+					<input type="number" class="form-control" name="id_tarjeta" required>
+
+							
+			</div>
+			<div>
+				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>Actualizar</button>
+				<button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span>Cancelar</button>
+			</div>
+		
+	</form>
 
 </body>
 </html>
