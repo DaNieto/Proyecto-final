@@ -5,6 +5,7 @@
   <br>
   <br><br><br>
   <div style="margin-left:10%;font-size: 20px;text-decoration-line: underline;">
+    
     <tr>  
       <th><b>{{Auth::user()->name}}</b></th>
       <br> 

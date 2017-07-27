@@ -1,4 +1,4 @@
-@extends('layouts.app')
+ 	@extends('layouts.app')
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Press+Start+2P"         type="text/css" media="all">
 
@@ -7,7 +7,7 @@
 <head>
 
 <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
- <script> 
+ <script>
 onload=function(){
 	var plat= document.getElementById("Plataforma").getAttribute("class");
 
@@ -107,7 +107,7 @@ onload=function(){
 		case 'thelast':
 				document.getElementById('Gameimage').src='../imagesP/juegos/thelast.png';
 				document.getElementById('detail').href="{{url('/consultaJuego')}}/26";
-		
+
 		break;
 		case 'W_dd':
 				document.getElementById('Gameimage').src='../imagesP/juegos/W_dd.jpg';
@@ -145,7 +145,7 @@ onload=function(){
 				document.getElementById('Gameimage').src='../imagesP/juegos/W_breath.jpg';
 				document.getElementById('detail').href="{{url('/consultaJuego')}}/28";
 		break;
-		default: 
+		default:
 				document.getElementById('Gameimage').src='../imagesP/juegos/notFound.jpg';
 				document.getElementById('detail').href="{{url('/')}}";
 		break;
@@ -161,7 +161,7 @@ onload=function(){
 <br>
 <br>
 <br>
-<section></section>tion>
+<section></section>
 <!-- start main -->
 <link href="../cssP/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--- start-mmmenu-script-->
@@ -172,7 +172,7 @@ onload=function(){
 
 	<!-- start grids_of_3 -->
 	<div class="grids_of_31" style="">
-	
+
 	@foreach($catalogo as $a)
 	<div id="imageid" class='{{$a->image}}'></div>
 		<div class="grid1_of_31" style="width:25%;height: 80%">
@@ -185,7 +185,7 @@ onload=function(){
 						<a href="{{url('/consultaJuego')}}/{{$a->id_producto}}" class="btn btn-primary btn-sm">
 							<span class="glyphicon glyphicon-eye-open">vista</span>
 						</a>
-						
+
 						<a href="{{url('/agregacarrito')}}/{{$a->id_producto}}" class="btn btn-success btn-sm">
 							<span class="glyphicon glyphicon-shopping-cart"></span> Agregar al Carrito
 						</a>
