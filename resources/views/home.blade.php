@@ -121,8 +121,8 @@
         <div class="container">
             <div class="w3lsaboutaits-grids">
                 <div class="col-md-6 w3lsaboutaits-grid w3lsaboutaits-grid-1">
-                    <h3>Choose from 10000+ Games to Download</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>Escoje entre nuestra variedad de videojuegos</h3>
+                    <p>Tenemos las razones científicas de que hay habilidades que mejoran jugando videojuegos. Los videojuegos más violentos fomentan la capacidad de atención. ... Se demostró también que los videojuegos potencian la capacidad de localizar varios objetos al mismo tiempo. </p>
                 </div>
                 <div class="col-md-6 w3lsaboutaits-grid w3lsaboutaits-grid-2">
                     <img src="images/about.jpg" alt="Game Robo">
@@ -208,799 +208,7 @@
 
 
     <!-- Tabs -->
-    <div class="wthreetabsaits" id="wthreetabsaits">
-        <section>
-            <h3>Collection</h3>
-            <div class="tabs tabs-style-line">
-                <nav class="container">
-                    <ul>
-                        <li><a href="#section-line-1"><span>POPULAR</span></a></li>
-                        <li><a href="#section-line-2"><span>NEW ARRIVALS</span></a></li>
-                        <li><a href="#section-line-3"><span>BEST SELLERS</span></a></li>
-                        <li><a href="#section-line-4"><span>EDITOR'S PICK</span></a></li>
-                    </ul>
-                </nav>
-                <div class="content-wrap">
-                    <section id="section-line-1">
-                        <div id="owl-demo" class="owl-carousel text-center">
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-1.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Forza Horizon 3</h3>
-                                <h4>2 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-2.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Fallout 4</h3>
-                                <h4>1 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-3.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Mass Effect 4</h3>
-                                <h4>900000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-4.jpg" alt="Game Robo">
-                                </div>
-                                <h3>The Division</h3>
-                                <h4>874000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-5.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Assassin's Creed III</h3>
-                                <h4>997000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-6.jpg" alt="Game Robo">
-                                </div>
-                                <h3>The Elder Scrolls</h3>
-                                <h4>688000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-7.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Watch Dogs</h3>
-                                <h4>589000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-8.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Titanfall</h3>
-                                <h4>800000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-9.jpg" alt="Game Robo">
-                                </div>
-                                <h3>The Witcher 3</h3>
-                                <h4>950000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/popular-10.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Battlefield 4</h3>
-                                <h4>1 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="section-line-2">
-                        <div id="owl-demo1" class="owl-carousel text-center">
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-1.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Call of Duty: Ghosts</h3>
-                                <h4>3 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-2.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Mortal Kombat X</h3>
-                                <h4>1.5 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-3.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Guild Wars 2</h3>
-                                <h4>530000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-4.jpg" alt="Game Robo">
-                                </div>
-                                <h3>League of Legends</h3>
-                                <h4>974000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-5.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Child of Eden</h3>
-                                <h4>457000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-6.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Dark Souls III</h3>
-                                <h4>788000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-7.jpg" alt="Game Robo">
-                                </div>
-                                <h3>World of Warships</h3>
-                                <h4>489000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-8.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Metro 2033</h3>
-                                <h4>907000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-9.jpg" alt="Game Robo">
-                                </div>
-                                <h3>DOTA 2</h3>
-                                <h4>750000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/new-10.jpg" alt="Game Robo">
-                                </div>
-                                <h3>World of warcraft</h3>
-                                <h4>2 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="section-line-3">
-                        <div id="owl-demo2" class="owl-carousel text-center">
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-1.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Batman: Arkham</h3>
-                                <h4>2 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-2.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Tomb Raider: Rise</h3>
-                                <h4>1.5 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-3.jpg" alt="Game Robo">
-                                </div>
-                                <h3>S.T.A.L.K.E.R. 2</h3>
-                                <h4>530000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-4.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Minecraft</h3>
-                                <h4>974000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-5.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Deadpool</h3>
-                                <h4>457000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-6.jpg" alt="Game Robo">
-                                </div>
-                                <h3>World of Tanks</h3>
-                                <h4>788000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-7.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Crysis 3</h3>
-                                <h4>489000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-8.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Hitman</h3>
-                                <h4>907000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-9.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Call Of Duty 11</h3>
-                                <h4>750000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/best-10.jpg" alt="Game Robo">
-                                </div>
-                                <h3>DOOM</h3>
-                                <h4>2 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="section-line-4">
-                        <div id="owl-demo3" class="owl-carousel text-center">
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-1.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Gran Turismo 6</h3>
-                                <h4>3 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-2.jpg" alt="Game Robo">
-                                </div>
-                                <h3>The Crew</h3>
-                                <h4>1 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-3.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Assetto Corsa</h3>
-                                <h4>900000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-4.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Project CARS</h3>
-                                <h4>874000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-5.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Diablo III</h3>
-                                <h4>997000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-6.jpg" alt="Game Robo">
-                                </div>
-                                <h3>BioShock Infinite</h3>
-                                <h4>688000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-7.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Shadow of Mordor</h3>
-                                <h4>589000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-8.jpg" alt="Game Robo">
-                                </div>
-                                <h3>The Last of Us</h3>
-                                <h4>800000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-9.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Splinter Cell</h3>
-                                <h4>950000+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="agileinfoitem-image">
-                                    <img src="images/editor-10.jpg" alt="Game Robo">
-                                </div>
-                                <h3>Rainbow Six</h3>
-                                <h4>1 Million+ Downloads</h4>
-                                <div class="wthreeratingaits">
-                                    <ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="wthreeitemdownload">
-                                    <a href="#">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div><!-- /content -->
-            </div><!-- /tabs -->
-        </section>
-    </div>
+   
     <!-- //Tabs -->
 
 
@@ -1009,33 +217,40 @@
     <div class="wthreeblogsaits" id="wthreeblogsaits">
         <div class="wthreeblogsaits-grids">
 
-            <h3>Latest Blogs & News</h3>
+            <h3>Ultimas Noticias</h3>
             <div class="col-md-3 wthreeblogsaits-grid wthreeblogsaits-grid-1">
-                <a href="#" data-toggle="modal" data-target="#myModal1"><img src="images/blog-1.jpg" alt="Game Robo"></a>
-                <span class="w3date">10-10-2016</span>
-                <h4><a href="#" data-toggle="modal" data-target="#myModal1">NVIDIA TITAN X</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">READ MORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                <a href="#" data-toggle="modal" data-target="#myModal1"><img src="imagesPC/mario1.jpg" alt="Game Robo"></a>
+                <span class="w3date">Nintendo Switch 2017</span>
+                <h4><a href="#" data-toggle="modal" data-target="#myModal1">Super Mario Oddysey</a></h4>
+                <p>
+¡Viaja por el mundo!
+¡En su nueva aventura, Mario tiene un mundo entero por explorar! Desde misteriosas ruinas a urbes con luces de neón, cada reino es un campo de recreo repleto de secretos y de lunas que recoger.
+</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Leer Mas..<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
             </div>
             <div class="col-md-3 wthreeblogsaits-grid wthreeblogsaits-grid-2">
-                <a href="#" data-toggle="modal" data-target="#myModal2"><img src="images/blog-2.jpg" alt="Game Robo"></a>
-                <span class="w3date">15-10-2016</span>
-                <h4><a href="#" data-toggle="modal" data-target="#myModal2">PS4 VR HEADSET</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <a href="#" data-toggle="modal" data-target="#myModal2"><img src="imagesPC/x.png" alt="Game Robo"></a>
+                <span class="w3date">Xbox 2017</span>
+                <h4><a href="#" data-toggle="modal" data-target="#myModal2">Xbox One X</a></h4>
+                <p>
+La consola más potente de la historia.
+
+Con un 40% más poder, siempre serás famoso. ¡Formato 4K disponible próximamente!
+</p>
                 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">READ MORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
             </div>
             <div class="col-md-3 wthreeblogsaits-grid wthreeblogsaits-grid-3">
-                <a href="#" data-toggle="modal" data-target="#myModal3"><img src="images/blog-3.jpg" alt="Game Robo"></a>
-                <span class="w3date">20-10-2016</span>
-                <h4><a href="#" data-toggle="modal" data-target="#myModal3">ACCESSORIES FOR XBOX</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <a href="#" data-toggle="modal" data-target="#myModal3"><img src="imagesPC/d.jpg" alt="Game Robo"></a>
+                <span class="w3date">Dragon ball Z fighter 2017</span>
+                <h4><a href="#" data-toggle="modal" data-target="#myModal3">Dragon Ball Z Fighter</a></h4>
+                <p>Es un próximo videojuego de luchas en 2.5D1​ desarrollado por Arc System Works y distribuido por Bandai Namco Entertainment, basado en la franquicia Dragon Ball</p>
                 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal3">READ MORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
             </div>
             <div class="col-md-3 wthreeblogsaits-grid wthreeblogsaits-grid-4">
-                <a href="#" data-toggle="modal" data-target="#myModal4"><img src="images/blog-4.jpg" alt="Game Robo"></a>
-                <span class="w3date">25-10-2016</span>
-                <h4><a href="#" data-toggle="modal" data-target="#myModal4">NEW SUPER MARIO BROS!</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <a href="#" data-toggle="modal" data-target="#myModal4"><img src="imagesPC/vr.jpg" alt="Game Robo"></a>
+                <span class="w3date"> PS4 2017</span>
+                <h4><a href="#" data-toggle="modal" data-target="#myModal4">PS4 VR</a></h4>
+                <p>PlayStation VR es el miembro más reciente de la familia PS4. Independientemente de qué PS4 tengas, estarás listo para disfrutar de PS VR. Conecta el casco a tu PS4, añade la PlayStation Camera* y deja atrás la realidad</p>
                 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal4">READ MORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
             </div>
             <div class="clearfix"></div>
@@ -1049,11 +264,17 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">NVIDIA TITAN X</h4>
+                            <h4 class="modal-title">Super Mario Oddysey</h4>
                         </div>
                         <div class="modal-body">
-                            <img src="images/blog-1.jpg" alt="Game Robo">
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="imagesPC/mario1.jpg" alt="Game Robo">
+                            <p>La princesa Peach ha desaparecido una vez más y le toca a Mario rescatarla de las garras de Bowser. Esta vez, el maquiavélico villano está planeando una boda de las de tirar la casa por la ventana en la que piensa darle el sí a la pobre Peach. 
+ ¡Forma equipo con Cappy!
+Capture
+
+Mario no está solo en esta misión para encontrar a Bowser, cuenta con un nuevo amigo: Cappy, un misterioso personaje del país de los sombreros que se ha convertido en la emblemática gorra de Mario.
+
+Usa la gorra de Mario para enfrentarte a tus enemigos o para saltar más alto. Hasta es capaz de tomar el control de rivales como Goombas, Chomp Cadenas, balones, taxis y… ¡¿un tiranosaurio?!</p>
                         </div>
                     </div>
                 </div>
@@ -1064,11 +285,20 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">PS4 VR HEADSET</h4>
+                            <h4 class="modal-title">Xbox One "X"</h4>
                         </div>
                         <div class="modal-body">
-                            <img src="images/blog-2.jpg" alt="Game Robo">
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="imagesPC/x.png" alt="Game Robo">
+                            <p> 6 Teraflops
+
+Desata los 6 teraflops de capacidad de procesamiento gráfico, que hace que los juegos se desempeñen mejor que nunca.
+326 GB/s
+
+Visualiza cada uno de los cuadros gracias al ancho de banda de memoria de 326 GB/s.
+12 GB GDDR5
+
+Maximiza el rendimiento de los juegos con la velocidad de 12 GB de memoria gráfica GDDR5.
+Disfruta de brillantes detalles gráficos en la luz, las sombras y los reflejos con alto rango dinámico y una amplia gama de colores.Haz streaming y graba videos de juego en 4K a unos impresionantes 60 FPS.Disfruta de un audio de primera calidad que te pone en el centro del sonido espacial 3D.</p>
                         </div>
                     </div>
                 </div>
@@ -1079,11 +309,13 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">ACCESSORIES FOR XBOX</h4>
+                            <h4 class="modal-title">Dragon Ball Z Fighter</h4>
                         </div>
                         <div class="modal-body">
-                            <img src="images/blog-3.jpg" alt="Game Robo">
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="imagesPC/d.jpg" alt="Game Robo">
+                            <p>En un comunicado de prensa japonés, lanzado el 12 de junio de 2017, dos imágenes del juego fueron filtradas antes del E3 2017.2 Una imagen mostraba a Goku Súper Saiyan combatiendo contra Freezer, mientras que la otra imagen mostraba a Vegeta, Célula, y Majin Buu.3​ El comunicado fue posteriormente eliminado del sitio web de Bandai Namco.
+
+El 11 de junio de 2017, el juego fue revelado en la conferencia de Microsoft en el E3, con el título confirmado Dragon Ball Fighter Z .El modo de juego es similar al de Guilty Gear Xrd y BlazBlue: Central Fiction, con la adición de ataques asistidos y batallas en equipos 3 contra 3, similar a Marvel vs. Capcom 2: New Age of Heroes y (Ultimate) Marvel vs. Capcom 3: Fate of Two Worlds.The King of Fighters 2003 The King of Fighters XI</p>
                         </div>
                     </div>
                 </div>
@@ -1094,11 +326,20 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">NEW SUPER MARIO BROS!</h4>
+                            <h4 class="modal-title">Ps4 VR</h4>
                         </div>
                         <div class="modal-body">
-                            <img src="images/blog-3.jpg" alt="Game Robo">
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="imagesPC/vr.jpg" alt="Game Robo">
+                            <p>Descubre el futuro
+
+Pantalla OLED de 5,7"
+Observa cómo los entornos en 3D hiperrealistas cobran vida con una pantalla OLED personalizada.
+
+Visión de 360 grados
+Independientemente de hacia donde gires la cabeza, la inmersión en 360 grados de PS VR te permite formar parte de un mundo vivo con un campo de visión fluido.
+
+120 fotogramas por segundo
+Combina gráficos fluidos con baja latencia para ofrecerte un mundo increíble y envolvente.</p>
                         </div>
                     </div>
                 </div>
@@ -1114,7 +355,7 @@
 
     <!-- Portfolio -->
     <div class="w3portfolioaits" id="w3portfolioaits">
-    <h3>Portfolio</h3>
+    <h3>Portafolio</h3>
         <div class="w3portfolioaits-items">
             <div class="col-md-3 w3portfolioaits-item w3portfolioaits-item-1">
                 <a class="example-image-link" href="images/popular-1.jpg" data-lightbox="example-set" data-title="">
@@ -1254,28 +495,28 @@
                         <img src="images/stats-1.png" alt="Corsa Racer">
                     </div>
                     <div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='10000' data-delay='5' data-increment=4>10000</div>
-                    <p>Games</p>
+                    <p>Juegos</p>
                 </div>
                 <div class="col-md-3 w3lsstatsaits-grid w3lsstatsaits-grid-2">
                     <div class="w3lsstatsaits-img">
                         <img src="images/stats-2.png" alt="Corsa Racer">
                     </div>
                     <div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='1657033000' data-delay='5' data-increment="1">1657033000</div>
-                    <p>Downloads</p>
+                    <p>Compras</p>
                 </div>
                 <div class="col-md-3 w3lsstatsaits-grid w3lsstatsaits-grid-3">
                     <div class="w3lsstatsaits-img">
                         <img src="images/stats-3.png" alt="Corsa Racer">
                     </div>
                     <div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='192000' data-delay='5' data-increment="11">192000</div>
-                    <p>Followers</p>
+                    <p>Segidores</p>
                 </div>
                 <div class="col-md-3 w3lsstatsaits-grid w3lsstatsaits-grid-4">
                     <div class="w3lsstatsaits-img">
                         <img src="images/stats-4.png" alt="Corsa Racer">
                     </div>
                     <div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='71600' data-delay='5' data-increment="1">71600</div>
-                    <p>Online Gamers</p>
+                    <p>Jugadores Online</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -1354,47 +595,12 @@
     <!-- //Partners -->
 
 
-
-    <!-- Newsletter -->
-    <div class="w3lsnewsletter" id="w3lsnewsletter">
-        <div class="container">
-            <div class="w3lsnewsletter-grids">
-                <div class="col-md-5 w3lsnewsletter-grid w3lsnewsletter-grid-1 subscribe">
-                    <p>Subscribe to our Newsletter</p>
-                </div>
-                <div class="col-md-7 w3lsnewsletter-grid w3lsnewsletter-grid-2 email-form">
-                    <form action="#" method="post">
-                        <input class="email" type="email" name="Email" placeholder="Email Address" required="">
-                        <input type="submit" class="submit" value="SUBSCRIBE">
-                    </form>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
     <!-- //Newsletter -->
 
 
 
     <!-- Contact -->
-    <div class="agilecontactw3ls" id="agilecontactw3ls">
-        <div class="container">
-            <h3>Write to Us</h3>
-            <form action="#" method="post">
-                <div class="col-md-6 agilecontactw3ls-grid agilecontactw3ls-grid-1">
-                    <input type="text" Name="First Name" placeholder="FIRST NAME" required="">
-                    <input type="text" Name="Last Name" placeholder="LAST NAME" required="">
-                    <input type="email" Name="Email" placeholder="EMAIL" required="">
-                </div>
-                <div class="col-md-6 agilecontactw3ls-grid agilecontactw3ls-grid-2">
-                    <textarea name="Message" placeholder="MESSAGE" required=""></textarea>
-                    <div class="send-button">
-                        <input type="submit" value="SEND">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+
     <!-- //Contact -->
 
 
@@ -1405,47 +611,36 @@
 
             <div class="agilefooterwthree-grids">
                 <div class="col-md-3 agilefooterwthree-grid agilefooterwthree-grid1">
-                    <h4>INFORMATION</h4>
+                    <h4>INFORMACION</h4>
                     <ul>
-                        <li><a href="#">SPECIALS</a></li>
-                        <li><a href="#">NEW PRODUCTS</a></li>
-                        <li><a href="#">TOP SELLERS</a></li>
-                        <li><a href="#">BLOGS</a></li>
-                        <li><a href="#">REVIEWS</a></li>
-                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#w3portfolioaits">PORTAFOLIO</a></li>
+                        <li><a href="#wthreeblogsaits">NOTICIAS</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 agilefooterwthree-grid agilefooterwthree-grid2">
                     <h4>CATEGORIES</h4>
                     <ul>
-                        <li><a href="#">GAME GENRES</a></li>
-                        <li><a href="#">PC GAMES</a></li>
-                        <li><a href="#">PLAYSTATION GAMES</a></li>
-                        <li><a href="#">XBOX GAMES</a></li>
-                        <li><a href="#">WII GAMES</a></li>
-                        <li><a href="#">ALL GAMES</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 agilefooterwthree-grid agilefooterwthree-grid3">
-                    <h4>MY ACCOUNT</h4>
-                    <ul>
-                        <li><a href="#">MY ACCOUNT</a></li>
-                        <li><a href="#">MY ORDERS</a></li>
-                        <li><a href="#">MY DOWNLOADS</a></li>
-                        <li><a href="#">EDIT PROFILE</a></li>
-                        <li><a href="#">CHANGE PASSWORD</a></li>
-                        <li><a href="#">DONATE</a></li>
+                        <!-- <li><a href="#">GAME GENRES</a></li> -->
+                        <li><a href="{{ url('/consultaCatalogo/1') }}">JUEGOS PC</a></li>
+                        <li><a href="{{ url('/consultaCatalogo/2') }}">JUEGOS PLAYSTATION</a></li>
+                        <li><a href="{{ url('/consultaCatalogo/3') }}">JUEGOS XBOX</a></li>
+                        <li><a href="{{ url('/consultaCatalogo/4') }}">JUEGOS WII</a></li>
+                        <!-- <li><a href="#">ALL GAMES</a></li> -->
                     </ul>
                 </div>
                 <div class="col-md-3 agilefooterwthree-grid agilefooterwthree-grid4">
-                    <h4>CONTACT</h4>
+                    <h4>CONTACTO</h4>
                     <address>
                         <ul>
-                            <li>40019 S.p.A</li>
-                            <li>Parma Via Modena</li>
-                            <li>Sant'Agata Bolognese</li>
-                            <li>BO, Italy</li>
-                            <li>+1 (734) 123-4567</li>
+                            <li>Tecnologico de Culiacán</li>
+                            <li>Ingeniria Web</li>
+                            <li>Integrantes del equipo:</li>
+                            <li>Galaviz Castillo Jemael</li>
+                            <li>Medina Montoya Georgina Guadalupe</li>
+                            <li>Nieto Murillo Diego Alejandro</li>
+                            <li>Sapiens Ochoa Luis Fernando</li>
+                            <li>Culiacán, Sinaloa</li>
+                            <li>+52 (6671) 898822</li>
                             <li><a class="mail" href="mailto:mail@example.com">info@example.com</a></li>
                         </ul>
                     </address>
@@ -1459,17 +654,7 @@
                         <p>© 2017 Game Robo. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="=_blank"> W3layouts </a></p>
                     </div>
                 </div>
-                <div class="col-md-6 agilefooterwthreebottom-grid agilefooterwthreebottom-grid2">
-                    <div class="agilesocialwthree">
-                        <ul class="social-icons">
-                            <li><a href="#" class="facebook w3ls" title="Go to Our Facebook Page"><i class="fa w3ls fa-facebook-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="youtube w3layouts" title="Go to Our Youtube Channel"><i class="fa w3layouts fa-youtube-square" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                
             </div>
 
         </div>
@@ -1557,10 +742,6 @@
                     });
                 });
             </script>
-        <!-- //Smooth-Scrolling-JavaScript -->
-
-    <!-- //Custom-JavaScript-File-Links -->
-
 
 
 </body>

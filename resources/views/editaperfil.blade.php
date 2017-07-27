@@ -27,33 +27,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <br>
 <br>
 <br>
-<h3 class="tittle" style="margin-left: -70%"><b><ins>Informacion de Perfil:</ins> <sup><i>{{Auth::user()->name}}</i></sup></b>  <i class="glyphicon glyphicon-pencil"></i></h3>
-<!-- <h3>Informacion personal: </h3> -->
+	<h3 class="tittle" style="margin-left: -70%">
+		<b><ins>Informacion de Perfil:</ins> <sup><i>{{Auth::user()->name}}</i><i class="glyphicon glyphicon-pencil"></i></sup></b>
+	</h3>
 	<form action="{{url('/guardaperfil')}}" method="POST" style="margin-left:15%; margin-right: 15%">
 			{{ csrf_field() }}
-			<input id="token" type="hidden" name="_token" value="{{ csrf_token() }}">
+	<div style="margin-left: 20%; margin-right: 20%">
 			<div class="form-group">
-				<label for="dirección">Dirección:</label>
-					<input type="text" class="form-control" name="dirección" required>
+				<label for="tipo">Tipo de usuario:</label>
+					<input type="text" name="tipo" class="form-control" value="{{$usuarios->tiponombre}}">
+			</div>
+			<div class="form-group">
+				<label for="direccion">Dirección:</label>
+					<input type="text" name="direccion" class="form-control" value="{{$usuarios->direccion}}">
 			</div>
 			<div class="form-group">
 				<label for="cp">Codigo postal</label>
-					<input type="numeric" class="form-control" name="cp" required>
+					<input type="numeric" name="cp" class="form-control" value="{{$usuarios->cp}}">
 			</div>
 			<div class="form-group">
 				<label for="telefono">Telefono:</label>
-					<input type="numeric" class="form-control" name="telefono" required>
+					<input type="numeric" name="telefono" class="form-control" value="{{$usuarios->telefono}}">
 			</div>
 			<div class="form-group">
-				<label for="id_tarjeta">Num. tarjeta:</label>
-					<input type="text" class="form-control" name="id_tarjeta" required>
+				<label for="id_tarjeta">Num. tarjeta bancaria:</label>
+					<input type="text" name="id_tarjeta" class="form-control" value="{{$usuarios->id_tarjeta}}">
+			</div>
+			<div class="form-group">
+				<label for="coins">Coins:</label>
+					<input type="text" name="coins" class="form-control" value="{{$usuarios->coins}}">
+			</div>
+			<div>
 
+				<button type="submit" class="btn btn-primary">
+				<span class="glyphicon glyphicon-pencil">Actualizar</span>
+				</button>
 
 			</div>
-			<div><a ></a>
-				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>Actualizar</button>
+
 			</div>
-	</form>
+		</form>
 </body>
 </html>
 @endsection

@@ -27,33 +27,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <br>
 <br>
 <br>
-<h3 class="tittle" style="margin-left: -70%"><b><ins>Informacion de Perfil:</ins> <sup><i>{{Auth::user()->name}}</i></sup></b>  <i class="glyphicon glyphicon-pencil"></i></h3>
-<!-- <h3>Informacion personal: </h3> -->
-	<form action="{{url('/guardaperfil')}}" method="POST" style="margin-left:15%; margin-right: 15%">
-			{{ csrf_field() }}
-			<input id="token" type="hidden" name="_token" value="{{ csrf_token() }}">
+	<h3 class="tittle" style="margin-left: -70%">
+		<b><ins>Informacion de Perfil:</ins> <sup><i>{{Auth::user()->name}}</i></sup></b>
+	</h3><div style="margin-left: 20%; margin-right: 20%">
+			<div class="form-group">
+				<label for="tipo">Tipo de usuario:</label>
+					<input type="text" class="form-control" value="{{$usuarios->tiponombre}}" readonly="true">
+			</div>
 			<div class="form-group">
 				<label for="dirección">Dirección:</label>
-					<input type="text" class="form-control" name="dirección" required>
+					<input type="text" class="form-control" value="{{$usuarios->direccion}}" readonly="true">
 			</div>
 			<div class="form-group">
 				<label for="cp">Codigo postal</label>
-					<input type="numeric" class="form-control" name="cp" required>
+					<input type="numeric" class="form-control" value="{{$usuarios->cp}}" readonly="true">
 			</div>
 			<div class="form-group">
 				<label for="telefono">Telefono:</label>
-					<input type="numeric" class="form-control" name="telefono" required>
+					<input type="numeric" class="form-control" value="{{$usuarios->telefono}}" readonly="true">
 			</div>
 			<div class="form-group">
-				<label for="id_tarjeta">Num. tarjeta:</label>
-					<input type="text" class="form-control" name="id_tarjeta" required>
+				<label for="id_tarjeta">Num. tarjeta bancaria:</label>
+					<input type="text" class="form-control" value="{{$usuarios->id_tarjeta}}" readonly="true">
+			</div>
+			<div class="form-group">
+				<label for="id_tarjeta">Coins:</label>
+					<input type="text" class="form-control" value="{{$usuarios->coins}}" readonly="true">
+			</div>
+			<div>
 
+					<a href="{{url('/editaperfil')}}" class="btn btn-danger btn-sm">
+						<span class="glyphicon glyphicon-pencil" aria-hidden="true">Editar</span>
+					</a>
+			</div>
 
 			</div>
-			<div><a ></a>
-				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>Actualizar</button>
-			</div>
-	</form>
 </body>
 </html>
 @endsection

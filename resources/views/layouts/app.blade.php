@@ -50,9 +50,9 @@
 
                         <li><a  href="{{ url('') }}">HOME</a></li>
                         <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
-                        <li><a class="scroll" href="#wthreetabsaits">COLECCION</a></li>
-                        <li><a class="scroll" href="#wthreeblogsaits">BLOG</a></li>
-                        <li><a  href="{{url('jackpot')}}">JackPot</a></li>
+                        <li><a class="scroll" href="#w3portfolioaits">PORTAFOLIO</a></li>
+                        <li><a class="scroll" href="#wthreeblogsaits">NOTICIAS</a></li>
+                        <li><a  href="{{url('jackpot')}}">JACKPOT</a></li>
                         <li><a  href="{{url('contacto')}}">CONTACTO</a></li>
                     <!-- //aqui va el log y log out de laravel #wthreeblogsaits-->
 
@@ -62,7 +62,7 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a href="{{ route('register') }}">Registrarse</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="{{ url('home') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -72,7 +72,7 @@
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
                                     <p>
-                                        <a href="{{url('/perfil')}}" class="btn btn-primary btn-xs">
+                                        <a href="{{url('/consultap')}}" class="btn btn-primary btn-xs">
                                             <span class="glyphicon glyphicon-pencil " aria-hidden="true"></span>
                                             Perfil
                                         </a>

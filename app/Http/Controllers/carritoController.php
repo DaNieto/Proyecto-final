@@ -35,31 +35,44 @@ use DB;
     }
 
     public function añadir($datos){
-      $productos=DB::table('productos')
-      ->where('id_producto','=',$datos)
-      ->select('*')
+      $user=Auth::id();
+
+      $exist=DB::table('usuarios')
+      ->where('id_usuario',"=",$user)
+      ->select('id_usuario')
       ->first();
-      
-      $categoria=DB::table('productos')
-      ->where('id_producto','=',$datos)
-      ->select('id_categoria')
-      ->first();
-      
-      $cat=$categoria->id_categoria;
-      $user=Auth::user();
-      // dd($productos);
-      // $carrito=DB::table('carrito')
-      $carrito= new modelocarrito();
-      $carrito->id_usuario=$user->id;
-      $carrito->id_producto=$productos->id_producto;
-      $carrito->precio=$productos->precio;
-      $carrito->save();
-      flash('Se añadió tu articulo.')->success();
-      // return redirect('/consultarAlumnos');
-      // dd($carrito);
-      // return red9rect('url{{/carrito}}/{{}}');
-      //dd($cat);
-      return redirect()->action('juegosController@consultaCatalogo',['categoria'=>$cat]);
+
+      if($exist>=1){
+          $productos=DB::table('productos')
+          ->where('id_producto','=',$datos)
+          ->select('*')
+          ->first();
+          
+          $categoria=DB::table('productos')
+          ->where('id_producto','=',$datos)
+          ->select('id_categoria')
+          ->first();
+          
+          $cat=$categoria->id_categoria;
+          // dd($productos);
+          // $carrito=DB::table('carrito')
+          $carrito= new modelocarrito();
+          $carrito->id_usuario=$user->id;
+          $carrito->id_producto=$productos->id_producto;
+          $carrito->precio=$productos->precio;
+          $carrito->save();
+          flash('Se añadió tu articulo.')->success();
+          // return redirect('/consultarAlumnos');
+          // dd($carrito);
+          // return red9rect('url{{/carrito}}/{{}}');
+          //dd($cat);
+          return redirect()->action('juegosController@consultaCatalogo',['categoria'=>$cat]);
+        }else{
+          if(($exist==0 )||($exist==null)){
+            flash('Tienes Primero que registrarte y editar tu perfil para poder comprar, gracias.');
+            return redirect('/');
+          }
+        }
     }
     public function ticket($id_venta)
       {

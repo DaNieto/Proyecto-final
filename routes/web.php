@@ -35,7 +35,7 @@ Route::get('/agregaJuego', function(){
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 Route::get('/registraJuego', 'juegosController@registrar')->middleware('auth');
 Route::post('/guardaJuego','juegosController@guardar')->name('guardar')->middleware('auth');
 Route::get('/consultaJuego/{id}', 'juegosController@consultaJuego')->middleware('auth');
@@ -43,21 +43,22 @@ Route::get('/consultaCatalogo/{categoria}','juegosController@consultaCatalogo');
 
 Route::get('/details/{id}', 'juegosController@consultaJuego');
 
+
 Route::get('/carrito/{id}', 'carritoController@consultar')->middleware('auth');
 Route::get('/eliminacarrito/{id}', 'carritoController@eliminar');
 Route::get('/agregacarrito/{id} ', 'carritoController@añadir')->middleware('auth');
 
 Route::get('/contacto', 'contactoController@index');
-Route::get('/perfil', 'contactoController@index1');
+
+Route::get('/editaperfil', 'contactoController@edita');
+Route::get('/consultap','contactoController@consulta');
+Route::post('/guardaperfil', 'contactoController@actualiza');
+
 
 Route::get('/jackpot', 'jackpotController@index')->middleware('auth');
 Route::get('/regdiscount/{id}','jackpotController@addreg');
 
- //categorias
+Route::get('/details/{id}', 'juegosController@consultaJuego');
 
-// Route::get('/categoriaXbox', 'categoriasController@index');
-// Route::get('/categoriaPs4', 'categoriasController@index1');
-// Route::get('/categoriaPc', 'categoriasController@index2');
-// Route::get('/categoriaWiiu', 'categoriasController@index3')
 
 
