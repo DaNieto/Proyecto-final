@@ -1,4 +1,4 @@
-var options = ["$100", "$10", "$25", "$250", "$30", "$1000", "$1", "$200", "$45", "$500", "$5", "$20", "Lose", "$1000000", "Lose", "$350", "$5", "$99"];
+var options = ["1","2","3","Lose","4","5","6","Lose"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
@@ -94,6 +94,7 @@ function spin() {
   spinTime = 0;
   spinTimeTotal = Math.random() * 3 + 4 * 1000;
   rotateWheel();
+  document.getElementById("spin").disabled = true;
 }
 
 function rotateWheel() {
@@ -115,8 +116,22 @@ function stopRotateWheel() {
   var index = Math.floor((360 - degrees % 360) / arcd);
   ctx.save();
   ctx.font = 'bold 30px Helvetica, Arial';
-  var text = options[index]
+
+  var text = options[index];
   ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
+  var ref="/Proyecto-final/public/regdiscount/" + text;
+  alert("Felicidades ganaste : "+text);
+  alert("Recuerda que cada que entres al jackpot se te descontaran 50 coins por boleto para participar");
+  location.href=ref;
+  // var url="@Url.Action("regdiscount")";
+  
+  // var x = document.createElement("a");
+  // x.setAttribute("type", "button");
+  // x.setAttribute("class","btn btn-success");
+  // x.setAttribute("style","border-radius:5px;background-color:blue;");
+  // x.setAttribute("href").href="{{url('/regdiscount')}}/{{4}}";
+  // document.body.appendChild(x);
+
   ctx.restore();
 }
 

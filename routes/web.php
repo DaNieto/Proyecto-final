@@ -45,12 +45,13 @@ Route::get('/details/{id}', 'juegosController@consultaJuego');
 
 Route::get('/carrito/{id}', 'carritoController@consultar')->middleware('auth');
 Route::get('/eliminacarrito/{id}', 'carritoController@eliminar');
-Route::get('/agregacarrito/{id}', 'carritoController@añadir')->middleware('auth');
+Route::get('/agregacarrito/{id} ', 'carritoController@añadir')->middleware('auth');
 
 Route::get('/contacto', 'contactoController@index');
 Route::get('/perfil', 'contactoController@index1');
 
-Route::get('/jackpot', 'jackpotController@index');
+Route::get('/jackpot', 'jackpotController@index')->middleware('auth');
+Route::get('/regdiscount/{id}','jackpotController@addreg');
 
  //categorias
 

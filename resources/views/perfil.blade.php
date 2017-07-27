@@ -27,7 +27,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <br>
 <br>
 <br>
-<h3 class="tittle" style="margin-left: -70%"><b><ins>Informacion de Perfil:</ins> <sup><i>{{Auth::user()->name}}</i></subp</b>  <i class="glyphicon glyphicon-pencil"></i></h3>
+<h3 class="tittle" style="margin-left: -70%"><b><ins>Informacion de Perfil:</ins> <sup><i>{{Auth::user()->name}}</i></sup></b>  <i class="glyphicon glyphicon-pencil"></i></h3>
 <!-- <h3>Informacion personal: </h3> -->
 	<form action="{{url('/guardarAlumno')}}" method="POST" style="margin-left:15%; margin-right: 15%">
 
