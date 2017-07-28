@@ -13,7 +13,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('cssLog/app.css') }}" rel="stylesheet">
-
+<!--     <link href="{{ asset('../cssLog/app.css') }}" rel="stylesheet">
+ -->
 </head>
 <!-- <style>
     #control image-rendering: {
@@ -52,7 +53,7 @@
                         <li><a class="scroll" href="#agileinfoplatforms">PLATAFORMAS</a></li>
                         <li><a class="scroll" href="#w3portfolioaits">PORTAFOLIO</a></li>
                         <li><a class="scroll" href="#wthreeblogsaits">NOTICIAS</a></li>
-                        <li><a  href="{{url('jackpot')}}">JACKPOT</a></li>
+                        <li><a  href="{{url('desccoins')}}">JACKPOT</a></li>
                         <li><a  href="{{url('contacto')}}">CONTACTO</a></li>
                     <!-- //aqui va el log y log out de laravel #wthreeblogsaits-->
 
@@ -65,7 +66,7 @@
                             <li><a href="{{ route('register') }}">Registrarse</a></li>
                         @else
                             <li class="dropdown">
-                                <a href="{{ url('home') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <a href="{{ url('home') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 

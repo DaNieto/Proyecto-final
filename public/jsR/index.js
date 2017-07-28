@@ -121,6 +121,7 @@ function stopRotateWheel() {
   ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
   var ref="/Proyecto-final/public/regdiscount/" + text;
   alert("Felicidades ganaste : "+text);
+  ale
   alert("Recuerda que cada que entres al jackpot se te descontaran 50 coins por boleto para participar");
   location.href=ref;
   // var url="@Url.Action("regdiscount")";

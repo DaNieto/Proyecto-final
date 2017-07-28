@@ -14,6 +14,28 @@ class jackpotController extends Controller
     {
         return view('jackpot');
     }
+    public function pagocoins()
+    {
+      $user=Auth::id();
+      $exist=DB::table('usuarios')
+      ->where('id_usuario',"=",$user)
+      ->select('id_usuario')
+      ->first();
+      $exist=$exist->id_usuario;
+      if($exist>=1){
+        $coins=DB::table('usuarios')
+        ->where('id_usuario',"=",$user)
+        ->select("coins")
+        ->first();
+      dd($coins);
+        return redirect('/jackpot');
+      }else{
+          if(($exist==null )||($exist==0)){
+            flash('Tienes Primero que registrarte y editar tu perfil para poder comprar, gracias.');
+            return redirect('/');
+          }
+        }
+    }
     public function addreg($id){
       // $disc=$datos->discount;
       if($id != 'Lose'){

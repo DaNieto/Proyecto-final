@@ -54,11 +54,13 @@ Route::get('/editaperfil', 'contactoController@edita');
 Route::get('/consultap','contactoController@consulta');
 Route::post('/guardaperfil', 'contactoController@actualiza');
 
-
+Route::get('/desccoins','jackpotController@pagocoins')->middleware('auth');
 Route::get('/jackpot', 'jackpotController@index')->middleware('auth');
 Route::get('/regdiscount/{id}','jackpotController@addreg');
 
 Route::get('/details/{id}', 'juegosController@consultaJuego');
 
+Route::get('/muestradesc/','carritoController@muestradesc');
+Route::get('/agregadetalle','carritoController@agregadetalle');
 
-
+// Route::get('/detalle','carritoController@');

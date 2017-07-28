@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Press+Start+2P"         type="text/css" media="all">
 
 @section('content')
-
+@include('flash::message')
 <head>
 
 <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
@@ -204,4 +204,9 @@ onload=function(){
 
 </section>
 </body>
+<script type="text/javascript">
+            setTimeout(function() {
+                $(".alert").fadeOut(1500);
+            },1500);
+</script>
 @endsection

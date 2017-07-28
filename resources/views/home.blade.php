@@ -1,15 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+@include('flash::message')
+
 <!--
     Author: W3layouts
     Author URL: http://w3layouts.com
     License: Creative Commons Attribution 3.0 Unported
     License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-
-
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -746,9 +745,11 @@ Combina gráficos fluidos con baja latencia para ofrecerte un mundo increíble y
 
 </body>
 <!-- //Body -->
-
-
-
 </html>
+<script type="text/javascript">
+            setTimeout(function() {
+                $(".alert").fadeOut(1500);
+            },1500);
+</script>
 @endsection
 
