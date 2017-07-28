@@ -60,7 +60,10 @@ Route::get('/regdiscount/{id}','jackpotController@addreg');
 
 Route::get('/details/{id}', 'juegosController@consultaJuego');
 
-Route::get('/muestradesc/','carritoController@muestradesc');
+Route::get('/muestradesc','carritoController@muestradesc');
+Route::post('/agregadesc','carritoController@agregadesc');
+Route::get('/sindesc','carritoController@sindesc');
 Route::get('/agregadetalle','carritoController@agregadetalle');
-
+Route::get('/estructura','carritoController@ticket');
+Route::get('/ticketpdf', 'carritoController@pdf');
 // Route::get('/detalle','carritoController@');

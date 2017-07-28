@@ -5,7 +5,8 @@
 <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
 <script> 
   onload=function(){
-      alert("No cuenta ningun descuento para poder usar.");
+      alert("No cuenta con ningun articulo en carrito o"+
+            "no cuenta ningun descuento para poder usar.");
       alert("Puede, finalizar la compra si aun lo desea o"+
             "puede regresar a inicio.");
   }
@@ -23,7 +24,7 @@
     </tr>
     <br>
   </div>
-    <img src="../imagesP/juegos/notFound.jpg" align="middle">
+    <img src="imagesP/juegos/notFound.jpg"  style="width:30%;margin-right:25%">
     <br>
             <a href="{{url('/')}}" class="btn btn-primary btn-ms" style="margin-left: 10%">
                 <span class="glyphicon glyphicon-arrow-left"></span> Inicio

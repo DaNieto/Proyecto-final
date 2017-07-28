@@ -9,21 +9,23 @@
       alert("Recuerda, 'Finalizar compra' te llevara a la 'compra' inmediata"+
         ", aplicando descuentos solo a los articulos previamente elegidos.");
       alert("Y 'Elimnar' elimara el producto de la compra");
+      alert("El boton '+Descuento', lleva al siguiente articulo");
   }
 </script>
-<form action="{{url('/agregadesc')}}/{{$carrito->id_carrito}}" method="POST">
+<form action="{{url('/agregadesc')}}" method="POST">
  <input id="token" type="hidden" name="_token" value="{{ csrf_token() }}">
  <body>
   <link href="cssCar/style.css" rel="stylesheet" type="text/css" media="all" />
   <br>
   <br>
   <br><br><br>
+<div style="margin-left: 60%"><font color="white" size="5">Continua:   </font><button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus">Descuento</span></button></div>
 <div style="margin-left:20%;">
  <div style="margin-right: 80%;font-size: 40px;">
     <tr>  
       <th><font color="blue"><b>Usuario: {{Auth::user()->name}}</b></font></th>
       <br> 
-      <th>Continua: ---<button type="submit" class="btn btn-primary" style="margin-right: 20%"><span class="glyphicon glyphicon-plus">Descuento</span></button></th>
+      <th></th>
     </tr>
     <br>
   </div>
@@ -40,9 +42,9 @@
             </tr>
         </thead>
             <tr>
-              <td>{{$carrito->nombre}}</td>
+              <td><font color="white" size="5">{{$carrito->nombre}}</font></td>
               <th>----------------</th>
-              <td>$ {{$carrito->precio}}</td>
+              <td><font color="white" size="5">$ {{$carrito->precio}}</font></td>
               <th>----------------</th>
               <th>
               <select name="carrera" class="form-control">
@@ -58,7 +60,7 @@
             </a>
             </td>
             <td>
-            <a href="{{url('/agregadesc')}}/{{$carrito->id_carrito}}" class="btn btn-primary" style="margin-left: 10%">
+            <a href="{{url('/sindesc')}}" class="btn btn-primary" style="margin-left: 10%">
               <span class="glyphicon glyphicon-remove">Sin_descuento</span> 
             </a>
             </td>

@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\modelocarrito;
+use App\detalleVenta;
+use App\usuarios;
+use App\productos;
+use App\Venta;
 use DB;
 
  class carritoController extends Controller
@@ -14,6 +18,7 @@ use DB;
 
       $carrito=DB::table('carrito')
       ->where('carrito.id_usuario','=',$id)
+      ->where('carrito.id_carrito','!=',0)
        ->join('usuarios','carrito.id_usuario','=','usuarios.id_usuario')
       ->join('productos','carrito.id_producto','=','productos.id_producto')
        ->select('carrito.*','productos.nombre AS nombre','productos.precio AS precio')
@@ -86,55 +91,186 @@ use DB;
           }
         }
     }
-    public function agregadesc()
-      {   $usuario=Auth::user()->id;
+    public function muestradesc()
+    {   
+        $usuario=Auth::user()->id;
+          $cero=0;
           // dd($usuario);
-          $existdesc=DB::table('ofertas_usuarios')
-          ->where('id_usuarios','=',$usuario)
-          ->select(DB::raw('count(id_oferta) AS descuento'))
+          $existecar=DB::table('carrito')
+          ->where('id_usuario','=',$usuario)
+          ->select(DB::raw('count(id_carrito) AS countcar'))
           ->first();
-          $existdesc=$existdesc->descuento
-          // dd($existdesc);
-          if($existdesc>=1){
-            $desc=DB::table('ofertas_usuarios')
-            ->where('ofertas_usuarios.id_usuarios','=',$usuario)
-            ->join('ofertas','ofertas.id_oferta','=','ofertas_usuarios.id_oferta')
-            ->select('ofertas_usuarios.*','ofertas.nombre_oferta AS nombre_oferta')
-            ->get();
-            $carrito=DB::table('carrito')
+          $existecar=$existecar->countcar;
+
+          if($existecar>=1){
+            $existdesc=DB::table('ofertas_usuarios')
+            ->where('id_usuarios','=',$usuario)
+            ->select(DB::raw('count(id_oferta) AS descuento'))
+            ->first();
+            $existdesc=$existdesc->descuento;
+            // dd($existdesc);
+            if($existdesc>=1){
+              $desc=DB::table('ofertas_usuarios')
+              ->where('ofertas_usuarios.id_usuarios','=',$usuario)
+              ->join('ofertas','ofertas.id_oferta','=','ofertas_usuarios.id_oferta')
+              ->select('ofertas_usuarios.*','ofertas.nombre_oferta AS nombre_oferta')
+              ->get();
+              $carrito=DB::table('carrito')
+              ->where('id_usuario','=',$usuario)
+              ->where('id_carrito','!=',$cero)
+              ->join('productos','carrito.id_producto','=','productos.id_producto')
+              ->Select('carrito.*','productos.nombre AS nombre')
+              ->first();
+               // dd($desc);
+              return view('detalle',compact('carrito','desc'));
+            }else{
+              if(($existdesc==0 )||($existdesc==null)){
+                return view('detalleSinDesc');
+            }
+          }
+        }else{
+              if(($existecar==0 )||($existecar==null)){
+                return view('detalleSinDesc');
+              }
+            }
+      }
+      public function agregadesc(Request $datos){
+          $datos=$datos->carrera;
+          $desc=DB::table('ofertas_usuarios')
+          ->where('ofertas_usuarios.id_oferta','=',$datos)
+          ->join('ofertas','ofertas_usuarios.id_oferta','=','ofertas.id_oferta')
+          ->select('ofertas_usuarios.*','ofertas.descuento AS descuento')
+          ->first();
+          $iddesc=$desc->id_oferta;
+          $desc=$desc->descuento;
+          // dd($desc);
+          $usuario=Auth::id();
+          $carrito=modelocarrito::all()
+          ->where('id_usuario','=',$usuario)
+          ->first();
+          $precio=$carrito->precio;
+          $precioxdesc=$precio*$desc;
+          // dd($precioxdesc);
+          $carrito=DB::table('carrito')
             ->where('id_usuario','=',$usuario)
+            ->where('id_carrito','!=',0)
             ->join('productos','carrito.id_producto','=','productos.id_producto')
             ->Select('carrito.*','productos.nombre AS nombre')
             ->first();
-             dd($desc);
-            return view('detalle',compact('carrito','desc'));
-          }else{
-            if(($exist==0 )||($exist==null)){
-              return view('/detalleSinDesc');
-            }
-          }
+          $sindesc=new detalleVenta();
+          $sindesc->id_carrito=$carrito->id_carrito;
+          $sindesc->id_producto=$carrito->id_producto;
+          $sindesc->precioxdesc=$precioxdesc;
+          $sindesc->save();
+
+          $deldesc=DB::table('ofertas_usuarios')
+          ->where('id_usuarios','=',$usuario)
+          ->where('id_oferta','=',$iddesc)
+          ->delete();
+
+          $del=DB::table('carrito')
+          ->where('id_carrito','=',$carrito->id_carrito)
+          ->delete();
+          return redirect()->action('carritoController@muestradesc');
+          
+      }
+      public function sindesc(){
+          $usuario=Auth::id();
+          $carrito=modelocarrito::all()
+          ->where('id_usuario','=',$usuario)
+          ->first();
+          // dd($carrito);
+          $sindesc=new detalleVenta();
+          $sindesc->id_carrito=$carrito->id_carrito;
+          $sindesc->id_producto=$carrito->id_producto;
+          $sindesc->precioxdesc=$carrito->precio;
+          $sindesc->save();
+          // dd($sindesc);
+          flash('¡Recuerde que necesita registrar sus datos!')->success();
+
+          $delcar=DB::table('carrito')
+          ->where('id_carrito','=',$carrito->id_carrito)
+          ->delete();
+          return redirect()->action('carritoController@muestradesc');
       }
       public function agregadetalle(){
-        $usuario=Auth::id();
-        $count=DB::table('carrito')
-        ->wherte('id_usuario','=',$usuario)
-        ->Select(DB::raw('cosunt(id_carrito)AS cuenta'))
+        $user=Auth::id();
+        $count=DB::table('detalleventa')
+        ->where('id_usuario','=',$user)
+        ->Select(DB::raw('count(id_carrito)AS cuenta'))
         ->first();
         $count=$count->cuenta;
-        while($count!=0){
-          $carrito=DB::table('carrito')
-            ->where('id_usuario','=',$usuario)
-            ->select('*')
+        if($count!=0){
+          $total=DB::table('detalleventa')
+            ->where('id_usuario','=',$user)
+            ->select(DB::raw('sum(precioxdesc) AS total'))
             ->first();
-          $desc=DB::table('ofertas_usuarios')
-            ->where('ofertas_usuarios.id_usuario','=',$usuario)
-            ->join('ofertas','ofertas_usuarios.id_oferta','=','ofertas.id_oferta')
-            ->seletc('*')
-            ->first();
+          $fecha=DB::table('detalleventa')
+          ->select(DB::raw('CURDATE() AS fecha'))
+          ->first();
+          $getcoins=DB::table('usuarios')
+          ->where('id_usuario','=',$user)
+          ->select('coins')
+          ->first();
+          $getcoins=$getcoins->coins;
+          $getcoins=($getcoins)+($count*15);
+          DB::table('usuarios')
+            ->where('id_usuario','=',$user)
+            ->update(['coins'=>$getcoins]);
+          $fecha=$fecha->fecha;
+          $venta=new Venta();
+          $venta->id_usuario=$user;
+          $venta->fecha=$fecha;
+          $venta->totalcompra=$total->total;
+          $venta->save();
+          return redirect()->action('carritoController@ticket');
+          // return redirect('/ticket',compact('total','usuario','detalle'));
         }
       }
-    public function index()
+    public function ticket()
       {
-        return view('detalle');
+        $user=Auth::id();
+        $detalle=DB::table('detalleventa')
+          ->where('id_usuario','=',$user)
+          ->join('productos','detalleventa.id_producto','=','productos.id_producto')
+          ->join('categoria','productos.id_categoria','=','categoria.id_categoria')
+          ->select('detalleventa.*','detalleVenta.created_at','productos.nombre AS producto','detalleventa.precioxdesc','categoria.nombre AS categoria')
+          ->get();
+       $fecha=DB::table('detalleventa')
+          ->select(DB::raw('CURDATE() AS fecha'))
+          ->first();
+        $venta=DB::table('ventas')
+        ->where('id_usuario','=',$user)
+        ->where('fecha','=',$fecha->fecha)
+        ->select('*')
+        ->first();
+        $usuario=usuarios::all()
+          ->where('id_usuario','=',$user)
+          ->first();
+        return view('ticket',compact('usuario','detalle','venta'));
       }
+      public function pdf(){
+        $user=Auth::id();
+        $detalle=DB::table('detalleventa')
+          ->where('id_usuario','=',$user)
+          ->join('productos','detalleventa.id_producto','=','productos.id_producto')
+          ->join('categoria','productos.id_categoria','=','categoria.id_categoria')
+          ->select('detalleventa.*','detalleVenta.created_at','productos.nombre AS producto','detalleventa.precioxdesc','categoria.nombre AS categoria')
+          ->get();
+       $fecha=DB::table('detalleventa')
+          ->select(DB::raw('CURDATE() AS fecha'))
+          ->first();
+        $venta=DB::table('ventas')
+        ->where('id_usuario','=',$user)
+        ->where('fecha','=',$fecha->fecha)
+        ->select('*')
+        ->first();
+        $usuario=usuarios::all()
+          ->where('id_usuario','=',$user)
+          ->first();
+      $vista=view('ticket', compact('detalle','venta','usuario'));
+      $pdf=\App::make('dompdf.wrapper');
+      $pdf->loadHTML($vista);
+      return $pdf->stream('ticketCompraFinalboss.pdf');
+   }
  }

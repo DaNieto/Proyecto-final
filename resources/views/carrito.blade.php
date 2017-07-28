@@ -57,7 +57,7 @@
         
         
       @else
-        <h2>No has seleccionado articulos para comprar...</h2>
+        <h2><font color="white" size="10">No has seleccionado articulos para comprar...</h2>
 
        
         @endif
@@ -65,7 +65,7 @@
             <a href="{{url('/')}}" class="btn btn-primary btn-ms" style="margin-left: 0%">
                 <span class="glyphicon glyphicon-arrow-left"></span> Inicio
             </a>
-            <a href="{{url('/agregadetalle')}}" class="btn btn-success btn-ms" style="margin-right: 25%">Finalizar compra<span class="glyphicon glyphicon-arrow-right"></span> 
+            <a href="{{url('/muestradesc')}}" class="btn btn-success btn-ms" style="margin-right: 25%">Siguiente  <span class="glyphicon glyphicon-arrow-right"></span>
             </a>    
     </div>
   </div>

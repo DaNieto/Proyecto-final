@@ -27,10 +27,19 @@ class jackpotController extends Controller
         ->where('id_usuario',"=",$user)
         ->select("coins")
         ->first();
-      dd($coins);
-        return redirect('/jackpot');
+        $coins=$coins->coins;
+        if($coins>=45){
+          $coins=$coins-45;
+          DB::table('usuarios')
+          ->where('id_usuario','=',$user)
+          ->update(['coins'=>$coins]);
+          return redirect('/jackpot');
+        }else{
+            flash('No cuentas con las suficientes coins para poder jugar');
+            return redirect('/');
+          }
       }else{
-          if(($exist==null )||($exist==0)){
+          if(($exist==0 )||($exist==null)){
             flash('Tienes Primero que registrarte y editar tu perfil para poder comprar, gracias.');
             return redirect('/');
           }
@@ -44,7 +53,6 @@ class jackpotController extends Controller
       	$desc->id_oferta=$id;
       	$desc->id_usuarios=$user;
       	$desc->save();
-
       	return redirect('/');
 
       }else{

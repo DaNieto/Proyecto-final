@@ -1,89 +1,99 @@
 @extends('layouts.app')
-@section('content')
-	<div class="container">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Press+Start+2P" type="text/css" media="all">
+  @section('content')
+<script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+ <body>
+  <link href="cssCar/style.css" rel="stylesheet" type="text/css" media="all" />
+  <br>
+  <br>
+  <br><br><br>
+<div style="margin-left:10%;">
+ <div style="margin-right: 80%;font-size: 40px;">
+    <tr>  
+      <th><font color="blue"><b>Usuario: {{Auth::user()->name}}</b></font></th>
+      <br> 
+    </tr>
+  </div>
+<div class="container">
 		<div id="pintable" class="row">
 			<div  class="col s12 m10 offset-m1  l8 offset-l2">
-				<h1>
-				</h1>
-				<h2>Información Personal</h2>
+				<h2><font color="white" size="10">Información Personal</font></h2>
+				<br>
 				<table class="striped">
 					<tbody>
 						<tr>
-							<th>Nombre</th>
-							<td>{{Auth::user()->name}}</td>
+							<th><font color="white" size="5">Nombre</th>
+							<td><font color="white" size="5">{{Auth::user()->name}}</td>
 						</tr>
 						<tr>
-							<th >Correo Electronico</th>
-							<td>{{Auth::user()->email}}</td>
+							<th><font color="white" size="5">Correo Electronico</th>
+							<td><font color="white" size="5">{{Auth::user()->email}}</td>
 						</tr>
 						<tr>
 						<tr>
-							<th>Dirección</th>
-							<td>{{$usuario->direccion}}</td>
+							<th><font color="white" size="5">Dirección</th>
+							<td><font color="white" size="5">{{$usuario->direccion}}</td>
 						</tr>
 						<tr>
-							<th>Codigo Postal</th>
-							<td>{{$usuario->cp}}</td>
+							<th><font color="white" size="5">Codigo Postal</th>
+							<td><font color="white" size="5">{{$usuario->cp}}</td>
 						</tr>
 						<tr>
-							<th>Numero de Compra</th>
-							<td>{{$venta->id_venta}}</td>
+							<th><font color="white" size="5">Numero de Compra</th>
+							<td><font color="white" size="5">{{$venta->id_venta}}</td>
 						</tr>
 						<tr>
-							<th>Fecha Compra</th>
-							<td>{{$venta->created_at}}</td>
+							<th><font color="white" size="5">Fecha Compra</th>
+							<td><font color="white" size="5">{{$venta->fecha}}</td>
 						</tr>
 					</tbody>
 				</table>
+				<br>
 				<table class="bordered">
 					<thead>
 						<tr>
-							<th>Nombre</th>
-							<th>Plataforma</th>
-							<th>Precio</th>
+							<th><font color="white" size="5">Nombre------</font></th>
+							<th><font color="white" size="5">Plataforma---</font></th>
+							<th><font color="white" size="5">Precio</font></th>
 						</tr>
 					</thead>
 					<tbody>
-					@php
-						$total = 0;
-					@endphp
-						@foreach($ticket as $thisventa)
+					@foreach($detalle as $d)
 							<tr>
-								<td>
-									<a href="{{url('view/'.$thisventa->descripcion->producto->id_producto->)}}">
-										{{$thisventa->nombre}}
-									</a>
+								<td><font color="white" size="5">
+									{{$d->producto}}</font>
 								</td>
-								<td>
-									 {{$thisventa->descripcion}}
+								<td><font color="white" size="5">
+									 {{$d->categoria}}</font>
 								</td>
-								<td>
-									 {{$thisventa->categoria}}
+								<td><font color="white" size="5">
+									 {{$d->precioxdesc}}<small>MXN</small></font>
 								</td>
-								<td>
-									 {{$thisventa->precioxdesc}}<small>MXN</small>
-								</td>
-
+					@endforeach
 							</tr>
-							@php
-								$total = $total + $thisventa->precio;
-							@endphp
-						@endforeach
 							<tr>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
-								<td>Total de Venta:</td>
-								<td>$ {{$total}}<small>MXN</small></td>
+								<td><font color="blue" size="5">Total de Venta:</font></td><br>
+								<td><font color="white" size="5">$ {{$venta->totalcompra}}<small>MXN</small></font></td>
 							</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
-		<div class="row center-align">
-			<button id="print" class="btn blue">Imprimir</button>
-		</div>
+		<!-- <div class="row center-align">
+			<a href="{{url('/ticketpdf')}}" class="btn btn-default btn-ms" style="margin-right: 90%">
+                PDF
+            </a>		</div> -->
 	</div>
-@endsection
+	    <br>
+            <a href="{{url('/')}}" class="btn btn-primary btn-ms" style="margin-right: 90%">
+                <span class="glyphicon glyphicon-arrow-left"></span> Inicio
+            </a>
+        <br>   
+ </body>
+ @endsection
