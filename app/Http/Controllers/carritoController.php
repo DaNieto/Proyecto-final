@@ -101,6 +101,7 @@ use DB;
           ->select(DB::raw('count(id_carrito) AS countcar'))
           ->first();
           $existecar=$existecar->countcar;
+          // dd($existecar);
 
           if($existecar>=1){
             $existdesc=DB::table('ofertas_usuarios')
@@ -108,13 +109,14 @@ use DB;
             ->select(DB::raw('count(id_oferta) AS descuento'))
             ->first();
             $existdesc=$existdesc->descuento;
-            // dd($existdesc);
+             // dd($existdesc);
             if($existdesc>=1){
               $desc=DB::table('ofertas_usuarios')
               ->where('ofertas_usuarios.id_usuarios','=',$usuario)
               ->join('ofertas','ofertas.id_oferta','=','ofertas_usuarios.id_oferta')
               ->select('ofertas_usuarios.*','ofertas.nombre_oferta AS nombre_oferta')
               ->get();
+              // dd($desc);
               $carrito=DB::table('carrito')
               ->where('id_usuario','=',$usuario)
               ->where('id_carrito','!=',$cero)
@@ -183,6 +185,7 @@ use DB;
           $sindesc=new detalleVenta();
           $sindesc->id_carrito=$carrito->id_carrito;
           $sindesc->id_producto=$carrito->id_producto;
+          $sindesc->id_usuario=$usuario;
           $sindesc->precioxdesc=$carrito->precio;
           $sindesc->save();
           // dd($sindesc);
@@ -195,6 +198,16 @@ use DB;
       }
       public function agregadetalle(){
         $user=Auth::id();
+        $carrito=modelocarrito::all()
+          ->where('id_usuario','=',$user)
+          ->first();
+          // dd($carrito);
+          $sindesc=new detalleVenta();
+          $sindesc->id_carrito=$carrito->id_carrito;
+          $sindesc->id_producto=$carrito->id_producto;
+          $sindesc->id_usuario=$user;
+          $sindesc->precioxdesc=$carrito->precio;
+          $sindesc->save();
         $count=DB::table('detalleventa')
         ->where('id_usuario','=',$user)
         ->Select(DB::raw('count(id_carrito)AS cuenta'))
@@ -225,6 +238,9 @@ use DB;
           $venta->save();
           return redirect()->action('carritoController@ticket');
           // return redirect('/ticket',compact('total','usuario','detalle'));
+        }
+        else{
+          return redirect('/');
         }
       }
     public function ticket()

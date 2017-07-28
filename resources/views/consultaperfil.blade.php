@@ -51,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="text" class="form-control" value="{{$usuarios->id_tarjeta}}" readonly="true">
 			</div>
 			<div class="form-group">
-				<label for="id_tarjeta">Coins:</label>
+				<label for="coins">Coins:</label>
 					<input type="text" class="form-control" value="{{$usuarios->coins}}" readonly="true">
 			</div>
 			<div>

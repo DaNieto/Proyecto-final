@@ -34,29 +34,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			{{ csrf_field() }}
 	<div style="margin-left: 20%; margin-right: 20%">
 			<div class="form-group">
-				<label for="tipo">Tipo de usuario:</label>
-					<input type="text" name="tipo" class="form-control" value="{{$usuarios->tiponombre}}">
-			</div>
-			<div class="form-group">
 				<label for="direccion">Dirección:</label>
-					<input type="text" name="direccion" class="form-control" value="{{$usuarios->direccion}}">
+					<input type="text" name="direccion" class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="cp">Codigo postal</label>
-					<input type="numeric" name="cp" class="form-control" value="{{$usuarios->cp}}">
+					<input type="numeric" name="cp" class="form-control" >
 			</div>
 			<div class="form-group">
 				<label for="telefono">Telefono:</label>
-					<input type="numeric" name="telefono" class="form-control" value="{{$usuarios->telefono}}">
+					<input type="numeric" name="telefono" class="form-control" >
 			</div>
 			<div class="form-group">
 				<label for="id_tarjeta">Num. tarjeta bancaria:</label>
-					<input type="text" name="id_tarjeta" class="form-control" value="{{$usuarios->id_tarjeta}}">
+					<input type="text" name="id_tarjeta" class="form-control" >
 			</div>
-			<div class="form-group">
-				<label for="coins">Coins:</label>
-					<input type="text" name="coins" class="form-control" value="{{$usuarios->coins}}">
-			</div>
+			
 			<div>
 
 				<button type="submit" class="btn btn-primary">

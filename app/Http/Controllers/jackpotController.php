@@ -19,9 +19,9 @@ class jackpotController extends Controller
       $user=Auth::id();
       $exist=DB::table('usuarios')
       ->where('id_usuario',"=",$user)
-      ->select('id_usuario')
+      ->select(DB::raw('count(id_usuario) AS count'))
       ->first();
-      $exist=$exist->id_usuario;
+      $exist=$exist->count;
       if($exist>=1){
         $coins=DB::table('usuarios')
         ->where('id_usuario',"=",$user)
