@@ -70,7 +70,7 @@ class contactoController extends Controller
             if($count==0){
               $sindesc=new usuarios();
               $sindesc->id_usuario=$user;
-              $sindesc->tipo=1;
+              $sindesc->tipo=2;
               $sindesc->direccion=$datos->direccion;
               $sindesc->cp=$datos->cp;
               $sindesc->telefono=$datos->telefono;

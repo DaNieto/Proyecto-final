@@ -18,41 +18,19 @@
         <div class="header">
             <h1><img src="imagesLog/c.png" alt=" "> FinalBoss</h1>
         </div>
-
-       <!--  <div class="design-w3l">
-            <div class="mail-form-agile">
-                <form action="#" method="post">
-                    <input type="text" name="name" placeholder="User Name  or  email..." required=""/>
-                    <input type="password"  name="password" class="padding" placeholder="Password" required=""/>
-                    <input type="submit" value="submit">
-                </form>
-            </div>
-          <div class="clear"> </div>
-        </div> -->
-                    <!-- Navigation -->
-
-                    <!-- Logo -->
-
-                          <!-- <div class="col-md-8 col-md-offset-2"> -->
-                           <!-- <div class="panel panel-default"> -->
                             <div class="design-w3l">
                               <div class="mail-form-agile">
-                               <!-- <div class="panel panel-default"> -->
-                                <!-- <div class="panel-heading"></div> -->
                                 <div class="panel-body">
                                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                                         {{ csrf_field() }}
 
                                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                            <!-- <label for="email" class="col-md-4 control-label">E-Mail Address</label> -->
 
                                             <div class="col-md-6">
-                                                <!-- <input id="email" type="email" class="form-control" name="name" value="{{ old('email') }}" placeholder="User Name  or  email..." required autofocus> -->
-                                                <input id="email" style="min-width:225%;" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="User Name  or  email..." required autofocus>
-                                                <!-- <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus> -->
+                                                <input id="email" style="min-width:225%;" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="User email..." required autofocus>
                                                 @if ($errors->has('email'))
                                                 <span class="help-block">
-                                                    <p>- Vuelve a introducir el correo<!-- <strong>{{ $errors->first('email') }}</strong> --></p>
+                                                    <p>- Vuelve a introducir el correo</p>
                                                 </span>
                                                 @endif
                                             </div>
@@ -60,7 +38,6 @@
 
 
                                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                            <!-- <label for="password" class="col-md-4 control-label">Password</label> -->
 
                                             <div class="col-md-6">
                                                 <input id="password" style="min-width:225%;" type="password" class="form-control" name="password" placeholder="Password" required>
@@ -84,9 +61,7 @@
 
                                         <div class="form-group">
                                             <div class="col-md-8 col-md-offset-4">
-                                                <!-- <button type="submit" class="btn btn-primary">Submit -->
                                                     <input type="submit" value="submit">
-                                                <!-- </button> -->
 
                                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                                     Forgot Your Password?
@@ -95,11 +70,8 @@
                                         </div>
                                     </form>
                                 </div>
-                            <!-- </div> -->
                         </div>
                     </div>
-                <!-- </div> -->
-            <!-- </div> -->
             </div>
         </body>
     <div class="footer">

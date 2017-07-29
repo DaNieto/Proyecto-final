@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@include('flash::message')
 
 <!--
     Author: W3layouts
@@ -59,7 +58,8 @@
     <!-- Header -->
     <div class="agileheader" id="agileitshome">
 
-        
+        @include('flash::message')
+
 
         <!-- Slider -->
         <div class="slider">
@@ -617,13 +617,23 @@ Combina gráficos fluidos con baja latencia para ofrecerte un mundo increíble y
                     </ul>
                 </div>
                 <div class="col-md-3 agilefooterwthree-grid agilefooterwthree-grid2">
-                    <h4>CATEGORIES</h4>
+                    <h4>CATEGORIAS</h4>
                     <ul>
                         <!-- <li><a href="#">GAME GENRES</a></li> -->
                         <li><a href="{{ url('/consultaCatalogo/1') }}">JUEGOS PC</a></li>
                         <li><a href="{{ url('/consultaCatalogo/2') }}">JUEGOS PLAYSTATION</a></li>
                         <li><a href="{{ url('/consultaCatalogo/3') }}">JUEGOS XBOX</a></li>
                         <li><a href="{{ url('/consultaCatalogo/4') }}">JUEGOS WII</a></li>
+                        <!-- <li><a href="#">ALL GAMES</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-md-3 agilefooterwthree-grid agilefooterwthree-grid3">
+                    <h4>ADMIN</h4>
+                    <ul>
+                        <!-- <li><a href="#">GAME GENRES</a></li> -->
+                        <li><a href="{{ url('/new') }}">AGREGA JUEGO</a></li>
+                        <li><a href="{{ url('/newadmn') }}">REGISTRA ADMN</a></li>
+
                         <!-- <li><a href="#">ALL GAMES</a></li> -->
                     </ul>
                 </div>

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Categorias;
@@ -10,9 +11,20 @@ use DB;
 class juegosController extends Controller
 {
     public function registrar()
-    {
-    	$categorias=Categorias::all();
-        return view('registroJuego', compact('categorias'));
+    {   
+        $user=Auth::id();
+        $tipo=DB::table('usuarios')
+        ->where('id_usuario','=',$user)
+        ->select('tipo')
+        ->first();
+        $tipo=$tipo->tipo;
+        if($tipo==1){
+        	$categorias=Categorias::all();
+            return view('registroJuego', compact('categorias'));
+        }else{
+            return view('home');
+        }
+
     }
     public function guardar(Request $juego)
     {

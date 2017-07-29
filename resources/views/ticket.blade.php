@@ -1,10 +1,10 @@
 @extends('layouts.app')
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Press+Start+2P" type="text/css" media="all">
   @section('content')
 <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
  <body>
-  <link href="cssCar/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../cssCar/style.css" rel="stylesheet" type="text/css" media="all" />
   <br>
   <br>
   <br><br><br>
@@ -85,10 +85,10 @@
 				</table>
 			</div>
 		</div>
-		<!-- <div class="row center-align">
-			<a href="{{url('/ticketpdf')}}" class="btn btn-default btn-ms" style="margin-right: 90%">
+		<div class="row center-align">
+			<a href="{{url('/ticketpdf')}}/{{$cantidad}}&&{{$venta->id_venta}}" class="btn btn-default btn-ms" style="margin-right: 90%">
                 PDF
-            </a>		</div> -->
+            </a>		</div>
 	</div>
 	    <br>
             <a href="{{url('/')}}" class="btn btn-primary btn-ms" style="margin-right: 90%">
