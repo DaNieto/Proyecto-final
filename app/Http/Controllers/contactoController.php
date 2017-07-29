@@ -40,13 +40,6 @@ class contactoController extends Controller
         }
     }
     public function edita(){
-    	// $user=Auth::id();
-    	// $usuarios=DB::table('usuarios')
-    	// ->join('tipousuarios','usuarios.tipo','=','tipousuarios.id_tipo')
-    	// ->where('id_usuario',"=",$user)
-    	// ->select('usuarios.*','tipousuarios.nombre AS tiponombre')
-    	// ->first();
-     //    dd($usuarios);
     	return view('editaperfil');
     }
     public function actualiza(Request $datos){

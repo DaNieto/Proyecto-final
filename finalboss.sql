@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-07-2017 a las 08:51:05
+-- Tiempo de generación: 29-07-2017 a las 15:05:17
 -- Versión del servidor: 10.1.24-MariaDB
 -- Versión de PHP: 7.1.6
 
@@ -69,6 +69,7 @@ CREATE TABLE `detalleventa` (
   `id_detalle` int(11) NOT NULL,
   `id_carrito` int(11) NOT NULL,
   `id_producto` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
   `precioxdesc` decimal(6,0) NOT NULL,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -97,6 +98,19 @@ CREATE TABLE `ofertas` (
   `nombre_oferta` varchar(10) NOT NULL,
   `descuento` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `ofertas`
+--
+
+INSERT INTO `ofertas` (`id_oferta`, `nombre_oferta`, `descuento`) VALUES
+(1, '5%', 0.95),
+(2, '10%', 0.9),
+(3, '15%', 0.85),
+(4, '20%', 0.8),
+(5, '25%', 0.75),
+(6, '30%', 0.7),
+(7, '35%', 0.65);
 
 -- --------------------------------------------------------
 
@@ -203,7 +217,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'luis', 'luizfer.sap@gmail.com', '$2y$10$809NoMqFa1DO5LBW57qqm.lDEJx89MIKzFSNMeoNxsGh8C89vatx2', 'nNhtNmbxHuxi8wHDyD6IKqAH1rRFMGUMp6Z96i9mwbrqfAIA6gtwqa0snrm3', '2017-07-25 22:47:38', '2017-07-25 22:47:38');
+(1, 'luis', 'luizfer.sap@gmail.com', '$2y$10$809NoMqFa1DO5LBW57qqm.lDEJx89MIKzFSNMeoNxsGh8C89vatx2', 'cZkvJWmzCOhLYOsGRFL0ktkvZGSH0VT5T3nJxlp210AkQ0NBssYy9daEDMly', '2017-07-25 22:47:38', '2017-07-25 22:47:38'),
+(2, 'geo', 'geo@gmail.com', '$2y$10$M5O5KjxU8mfJTxkLdJdEPOQNo.ue937Oz53avR/nG.jQ7hI/MiqZm', 'aeKpA9X79evqGvMwsZyKnPPIQb8MWMi2zJ4j4L0fs53AfzHaocnywlDzFnmm', '2017-07-26 22:41:53', '2017-07-26 22:41:53'),
+(3, 'Jim', 'jim@gmail.com', '$2y$10$e2fXUMlArFEXcfXxyUbnMunor7iKsWcGZ3SYw4YMRv2DRJOtD7ODi', 'MYHqH5ZXogNMYPV557LfHUXDuU9qXOBat2v8NOtOaSkOsGkIJ4oaFd66QOZp', '2017-07-27 16:54:13', '2017-07-27 16:54:13'),
+(4, 'diego', 'diego@gmail.com', '$2y$10$XqLUPfUMcQayxnmdVkJLu.L23Akl3ehauxlmgXofCgbPH0FBTQm8G', 'jJfmAZME1x0ylJVZUNoLf2jzoxrtMVZkZG1W4rIBSPTtPd9i0r2mSBvYdV7l', '2017-07-29 10:48:42', '2017-07-29 10:48:42'),
+(5, 'Luis', 'juan@gmail.com', '$2y$10$.6m1qFrkdvhEUQkr/DLUw.jnNN0IfCNgTOcE6E2A68ompOR/TN80u', 'whMEP6Jck6GwiqHsfhSugozrP07GTOMlRnXuWeLnz6uUPTW94wTujI75Fzls', '2017-07-29 13:27:25', '2017-07-29 13:27:25');
 
 -- --------------------------------------------------------
 
@@ -229,7 +247,11 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `tipo`, `direccion`, `cp`, `telefono`, `id_tarjeta`, `pass_tarjeta`, `coins`, `updated_at`, `created_at`) VALUES
-(1, 1, 'añsdhfñadsbfnladsfaslhn', 8170, 66717898822, 123154124, 'qwerty', 0, '2017-07-26 06:12:20', '2017-07-26 06:12:20');
+(1, 1, 'sadasdasf', 12323, 1212434124, 2147483647, 'qwerty', 840, '2017-07-29 11:20:53', '2017-07-26 06:12:20'),
+(2, 1, '-lansñfkn lasnd-f jh', 123123, 123124, 12341, 'asñdhfa', 0, '2017-07-26 16:49:37', '2017-07-26 16:49:37'),
+(3, 1, 'asdf asdf', 12351, 123125, 135235, 'querty', 135, '2017-07-29 11:54:17', '2017-07-28 23:12:08'),
+(4, 1, 'col. Quintas, Av. Las Quintas', 80000, 6671234234, 123412341, 'querty', 0, '2017-07-29 06:04:17', '2017-07-29 12:00:46'),
+(5, 1, 'La Lomita', 125123, 1234555, 1235423634, 'querty', 0, '2017-07-29 18:57:09', '2017-07-29 18:57:09');
 
 -- --------------------------------------------------------
 
@@ -239,11 +261,22 @@ INSERT INTO `usuarios` (`id_usuario`, `tipo`, `direccion`, `cp`, `telefono`, `id
 
 CREATE TABLE `ventas` (
   `id_venta` int(11) NOT NULL,
-  `id_detalle` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `fecha` datetime NOT NULL,
   `totalcompra` decimal(10,0) NOT NULL,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `ventas`
+--
+
+INSERT INTO `ventas` (`id_venta`, `id_usuario`, `fecha`, `totalcompra`, `updated_at`, `created_at`) VALUES
+(12, 1, '2017-07-29 04:57:25', '2300', '2017-07-29 16:57:26', '2017-07-29 16:57:26'),
+(13, 1, '2017-07-29 05:01:41', '2600', '2017-07-29 17:01:41', '2017-07-29 17:01:41'),
+(14, 1, '2017-07-29 05:20:53', '1400', '2017-07-29 17:20:53', '2017-07-29 17:20:53'),
+(15, 3, '2017-07-29 05:54:17', '2400', '2017-07-29 17:54:17', '2017-07-29 17:54:17');
 
 --
 -- Índices para tablas volcadas
@@ -320,8 +353,7 @@ ALTER TABLE `usuarios`
 -- Indices de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  ADD PRIMARY KEY (`id_venta`),
-  ADD KEY `id_usuario` (`id_detalle`);
+  ADD PRIMARY KEY (`id_venta`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -331,7 +363,7 @@ ALTER TABLE `ventas`
 -- AUTO_INCREMENT de la tabla `carrito`
 --
 ALTER TABLE `carrito`
-  MODIFY `id_carrito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id_carrito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=160;
 --
 -- AUTO_INCREMENT de la tabla `categoria`
 --
@@ -341,7 +373,7 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de la tabla `detalleventa`
 --
 ALTER TABLE `detalleventa`
-  MODIFY `id_detalle` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_detalle` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 --
 -- AUTO_INCREMENT de la tabla `migrations`
 --
@@ -351,7 +383,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT de la tabla `ofertas`
 --
 ALTER TABLE `ofertas`
-  MODIFY `id_oferta` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_oferta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
@@ -366,7 +398,12 @@ ALTER TABLE `tipousuarios`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT de la tabla `ventas`
+--
+ALTER TABLE `ventas`
+  MODIFY `id_venta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- Restricciones para tablas volcadas
 --
@@ -375,21 +412,15 @@ ALTER TABLE `users`
 -- Filtros para la tabla `carrito`
 --
 ALTER TABLE `carrito`
-  ADD CONSTRAINT `carrito_ibfk_1` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `carrito_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `detalleventa`
---
-ALTER TABLE `detalleventa`
-  ADD CONSTRAINT `detalleventa_ibfk_1` FOREIGN KEY (`id_carrito`) REFERENCES `carrito` (`id_carrito`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `carrito_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `carrito_ibfk_2` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `ofertas_usuarios`
 --
 ALTER TABLE `ofertas_usuarios`
-  ADD CONSTRAINT `ofertas_usuarios_ibfk_1` FOREIGN KEY (`id_oferta`) REFERENCES `ofertas` (`id_oferta`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `ofertas_usuarios_ibfk_2` FOREIGN KEY (`id_usuarios`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `ofertas_usuarios_ibfk_3` FOREIGN KEY (`id_oferta`) REFERENCES `ofertas` (`id_oferta`) ON DELETE CASCADE ON UPDATE NO ACTION,
+  ADD CONSTRAINT `ofertas_usuarios_ibfk_4` FOREIGN KEY (`id_usuarios`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `productos`
@@ -401,14 +432,7 @@ ALTER TABLE `productos`
 -- Filtros para la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD CONSTRAINT `usuarios_ibfk_2` FOREIGN KEY (`tipo`) REFERENCES `tipousuarios` (`id_tipo`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `usuarios_ibfk_3` FOREIGN KEY (`id_usuario`) REFERENCES `users` (`id`) ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `ventas`
---
-ALTER TABLE `ventas`
-  ADD CONSTRAINT `ventas_ibfk_1` FOREIGN KEY (`id_detalle`) REFERENCES `detalleventa` (`id_detalle`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

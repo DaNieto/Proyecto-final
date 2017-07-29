@@ -28,7 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <br>
 <br>
 	<h3 class="tittle" style="margin-left: -70%">
-		<b><ins>Informacion de Perfil:</ins> <sup><i>{{$usuarios->id_usuario}}</i></sup></b>
+		<b><ins>Informacion de Perfil-Admin:</ins> <sup><i>{{$usuarios->id_usuario}}</i></sup></b>
 	</h3><div style="margin-left: 20%; margin-right: 20%">
 			<div class="form-group">
 				<label for="tipo">Tipo de usuario:</label>

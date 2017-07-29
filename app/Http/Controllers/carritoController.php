@@ -51,11 +51,7 @@ use DB;
       ->where('id_usuario',"=",$user)
       ->select(DB::raw('count(id_usuario) AS cuenta'))
       ->first();
-      // ->select('id_usuario')
-      // ->first();
-      // dd($exist);
-      // $exist=$exist->id_usuario;
-      // $exist=$exist->id_usuario;
+
       $exist=$exist->cuenta;
       // dd($exist);
       if($exist>=1){
@@ -78,9 +74,7 @@ use DB;
           $carrito->precio=$productos->precio;
           $carrito->save();
           flash('Se añadió tu articulo.')->success();
-          // return redirect('/consultarAlumnos');
-          // dd($carrito);
-          // return red9rect('url{{/carrito}}/{{}}');
+
           //dd($cat);
           return redirect()->action('juegosController@consultaCatalogo',['categoria'=>$cat]);
         }else{
